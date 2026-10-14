@@ -1,7 +1,4 @@
-## Recursos materiales y didácticos
+<!-- Por módulo: recursos propios de {{modulo_corto}}, además de los comunes de la tabla anterior. -->
 
-<!-- Por módulo. -->
-
-- **Plataforma y materiales propios:** [Moodle Centros, apuntes, presentaciones].
-- **Recursos web:** [SEPE, Andalucía Orienta, portales de empleo, simuladores].
+- **Recursos web:** [Portales de empleo, SEPE, Andalucía Orienta, Seguridad Social, Europass…].
 - **Bibliografía:** [Autoría, título, editorial y año].

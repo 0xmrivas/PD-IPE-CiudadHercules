@@ -8,9 +8,9 @@ Se genera solo con cada cambio: no lo edites a mano.
 
 | Programación | PDF | Por completar | Revisar |
 |---|---|:---:|:---:|
-| IPE I · 1.º CFGM Gestión Administrativa (grupos A y B) | [PD-IPE-I-GM.pdf](../programaciones/PD-IPE-I-GM.pdf) | 82 | ✓ |
-| IPE I · 1.º CFGS Administración y Finanzas (grupos A y B) | [PD-IPE-I-GS.pdf](../programaciones/PD-IPE-I-GS.pdf) | 82 | ✓ |
-| IPE II · 2.º CFGS Administración y Finanzas (grupos A y B) | [PD-IPE-II-GS.pdf](../programaciones/PD-IPE-II-GS.pdf) | 83 | ✓ |
+| IPE I · 1.º CFGM Gestión Administrativa (grupos A y B) | [PD-IPE-I-GM.pdf](../programaciones/PD-IPE-I-GM.pdf) | 75 | ✓ |
+| IPE I · 1.º CFGS Administración y Finanzas (grupos A y B) | [PD-IPE-I-GS.pdf](../programaciones/PD-IPE-I-GS.pdf) | 75 | ✓ |
+| IPE II · 2.º CFGS Administración y Finanzas (grupos A y B) | [PD-IPE-II-GS.pdf](../programaciones/PD-IPE-II-GS.pdf) | 79 | ✓ |
 
 ## Piezas
 
@@ -24,12 +24,13 @@ Se escribe una vez y vale para las tres PD.
 |---|:---:|---|
 | [comun/anexo-moviles.md](../comun/anexo-moviles.md) | 1 | IPE-I-GM, IPE-I-GS, IPE-II-GS |
 | [comun/contexto.md](../comun/contexto.md) | 2 | IPE-I-GM, IPE-I-GS, IPE-II-GS |
-| [comun/criterios-departamento.md](../comun/criterios-departamento.md) | 1 | IPE-I-GM, IPE-I-GS, IPE-II-GS |
-| [comun/diversidad.md](../comun/diversidad.md) | 1 | IPE-I-GM, IPE-I-GS, IPE-II-GS |
-| [comun/introduccion.md](../comun/introduccion.md) | 1 | IPE-I-GM, IPE-I-GS, IPE-II-GS |
-| [comun/metodologia.md](../comun/metodologia.md) | 4 | IPE-I-GM, IPE-I-GS, IPE-II-GS |
+| [comun/criterios-departamento.md](../comun/criterios-departamento.md) | ✓ | IPE-I-GM, IPE-I-GS, IPE-II-GS |
+| [comun/diversidad.md](../comun/diversidad.md) | ✓ | IPE-I-GM, IPE-I-GS, IPE-II-GS |
+| [comun/evaluacion.md](../comun/evaluacion.md) | 1 | IPE-I-GM, IPE-I-GS, IPE-II-GS |
+| [comun/introduccion.md](../comun/introduccion.md) | ✓ | IPE-I-GM, IPE-I-GS, IPE-II-GS |
+| [comun/metodologia.md](../comun/metodologia.md) | 2 | IPE-I-GM, IPE-I-GS, IPE-II-GS |
 | [comun/plan-lector.md](../comun/plan-lector.md) | 1 | IPE-I-GM, IPE-I-GS, IPE-II-GS |
-| [comun/seguimiento.md](../comun/seguimiento.md) | 1 | IPE-I-GM, IPE-I-GS, IPE-II-GS |
+| [comun/seguimiento.md](../comun/seguimiento.md) | ✓ | IPE-I-GM, IPE-I-GS, IPE-II-GS |
 
 ### Por módulo
 
@@ -38,14 +39,18 @@ RA, criterios, UD y evaluación. IPE I es el mismo en grado medio y superior.
 | Archivo | Por completar | Entra en |
 |---|:---:|---|
 | [modulos/ipe1/contenidos.md](../modulos/ipe1/contenidos.md) | 16 | IPE-I-GM, IPE-I-GS |
-| [modulos/ipe1/evaluacion.md](../modulos/ipe1/evaluacion.md) | 5 | IPE-I-GM, IPE-I-GS |
+| [modulos/ipe1/faltas.md](../modulos/ipe1/faltas.md) | ✓ | IPE-I-GM, IPE-I-GS |
+| [modulos/ipe1/instrumentos.md](../modulos/ipe1/instrumentos.md) | 2 | IPE-I-GM, IPE-I-GS |
+| [modulos/ipe1/ponderacion.md](../modulos/ipe1/ponderacion.md) | 2 | IPE-I-GM, IPE-I-GS |
 | [modulos/ipe1/presentacion.md](../modulos/ipe1/presentacion.md) | 1 | IPE-I-GM, IPE-I-GS |
-| [modulos/ipe1/recursos.md](../modulos/ipe1/recursos.md) | 3 | IPE-I-GM, IPE-I-GS |
+| [modulos/ipe1/recursos.md](../modulos/ipe1/recursos.md) | 2 | IPE-I-GM, IPE-I-GS |
 | [modulos/ipe1/resultados.md](../modulos/ipe1/resultados.md) | 10 | IPE-I-GM, IPE-I-GS |
 | [modulos/ipe2/contenidos.md](../modulos/ipe2/contenidos.md) | 16 | IPE-II-GS |
-| [modulos/ipe2/evaluacion.md](../modulos/ipe2/evaluacion.md) | 5 | IPE-II-GS |
+| [modulos/ipe2/faltas.md](../modulos/ipe2/faltas.md) | 2 | IPE-II-GS |
+| [modulos/ipe2/instrumentos.md](../modulos/ipe2/instrumentos.md) | 2 | IPE-II-GS |
+| [modulos/ipe2/ponderacion.md](../modulos/ipe2/ponderacion.md) | 2 | IPE-II-GS |
 | [modulos/ipe2/presentacion.md](../modulos/ipe2/presentacion.md) | 1 | IPE-II-GS |
-| [modulos/ipe2/recursos.md](../modulos/ipe2/recursos.md) | 3 | IPE-II-GS |
+| [modulos/ipe2/recursos.md](../modulos/ipe2/recursos.md) | 2 | IPE-II-GS |
 | [modulos/ipe2/resultados.md](../modulos/ipe2/resultados.md) | 10 | IPE-II-GS |
 
 ### Por ciclo

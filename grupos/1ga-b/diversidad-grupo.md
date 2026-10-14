@@ -1,4 +1,4 @@
-## Grupo {{letra}}
+### Grupo {{letra}}
 
 <!-- Por grupo. Medidas concretas para el alumnado de este grupo, sin nombres ni diagnósticos. Si no hay medidas específicas, indicarlo. -->
 

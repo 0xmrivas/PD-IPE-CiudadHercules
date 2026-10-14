@@ -4,7 +4,7 @@
 
 ## Referencia normativa
 
-<!-- Común a las tres PD. La normativa del título está en ciclos/<ciclo>/normativa-titulo.md. Fuentes: marco legal de la PD del Departamento de Informática del IES Rafael Alberti (2026/2027) y PD de IPE I e IPE II del IES Ciudad de Hércules (2025/2026). -->
+<!-- Común a las tres PD. La normativa del título está en ciclos/<ciclo>/normativa-titulo.md. Fuentes: marco legal de la parte general de la PD del Departamento de Informática del IES Rafael Alberti (versión del 3 de octubre de 2026) y PD de IPE I e IPE II del IES Ciudad de Hércules (2025/2026). -->
 
 ### Leyes orgánicas y autonómicas
 
@@ -18,11 +18,15 @@
 
 **Real Decreto 659/2023, de 18 de julio** (BOE 174, de 22 de julio), por el que se desarrolla la ordenación del Sistema de Formación Profesional. Deroga el Real Decreto 1147/2011.
 
+**Real Decreto 69/2025, de 4 de febrero**, por el que se desarrollan los elementos integrantes e instrumentos de gestión del Sistema Nacional de Formación Profesional.
+
 **Real Decreto 658/2024, de 9 de julio**, por el que se modifican el Real Decreto 132/2010, de 12 de febrero, de requisitos mínimos de los centros, y el Real Decreto 659/2023, de 18 de julio.
 
 **Real Decreto 278/2023, de 11 de abril** (BOE 87, de 12 de abril), por el que se establece el calendario de implantación del Sistema de Formación Profesional establecido por la Ley Orgánica 3/2022.
 
 **Decreto 147/2025, de 17 de septiembre** (BOJA 180, de 18 de septiembre), por el que se establece la ordenación de las enseñanzas de los grados D y E del Sistema de Formación Profesional en la Comunidad Autónoma de Andalucía. Deroga el Decreto 436/2008.
+
+**Resolución de 24 de julio de 2026**, de la Dirección General de Formación Profesional y Educación Permanente, por la que se dictan instrucciones sobre la distribución horaria y la concreción curricular de los grados D y E para el curso 2026/2027. Fija las horas y la secuenciación de los módulos este curso.
 
 ### Evaluación y formación en empresa
 
@@ -32,13 +36,13 @@
 
 ### Organización y funcionamiento del centro
 
-**Decreto 327/2010, de 13 de julio** (BOJA 139, de 16 de julio), por el que se aprueba el Reglamento Orgánico de los Institutos de Educación Secundaria, **modificado por el Decreto 483/2026, de 31 de agosto**, que da nueva redacción al artículo 29, sobre las programaciones didácticas.
+**Decreto 327/2010, de 13 de julio** (BOJA 139, de 16 de julio), por el que se aprueba el Reglamento Orgánico de los Institutos de Educación Secundaria, **modificado por el Decreto 483/2026, de 31 de agosto**, de medidas para la mejora del funcionamiento del sistema educativo y de la gestión de la actividad docente en Andalucía. Su artículo 5 modifica los artículos 23.3.d y 29 del Decreto 327/2010: el Proyecto Educativo debe recoger los criterios horarios y de organización curricular y la programación de la formación en empresa por módulo, y la programación didáctica de cada módulo debe ajustarse a los nuevos contenidos obligatorios.
 
 **Orden de 20 de agosto de 2010** (BOJA 169, de 30 de agosto), por la que se regula la organización y el funcionamiento de los institutos de educación secundaria, así como el horario de los centros, del alumnado y del profesorado.
 
-**Decreto 301/2009, de 14 de julio** (BOJA 139, de 20 de julio), por el que se regula el calendario y la jornada escolar en los centros docentes, a excepción de los universitarios.
+**Decreto 301/2009, de 14 de julio** (BOJA 139, de 20 de julio), por el que se regula el calendario y la jornada escolar en los centros docentes, a excepción de los universitarios, con las modificaciones del **Decreto-ley 6/2023, de 11 de julio**.
 
-[Instrucciones de la Dirección General de Formación Profesional sobre la organización y el funcionamiento del curso 2026/2027].
+**Ley 39/2015, de 1 de octubre**, del Procedimiento Administrativo Común de las Administraciones Públicas, en lo referente al uso de medios telemáticos en el seguimiento y la evaluación.
 
 ### Atención a la diversidad
 
@@ -65,4 +69,4 @@ Esta programación se ajusta, además, al Plan de Centro del {{centro}}: Proyect
 | Evaluación | Orden de 29 de septiembre de 2010 | Orden de 18 de septiembre de 2025 |
 | Formación en empresa | Orden de 28 de septiembre de 2011 | Orden de 26 de septiembre de 2025 |
 | FOL y EIE | Módulos de cada título | IPE I e IPE II (RD 499/2024 y RD 500/2024) |
-| Programaciones didácticas | Artículo 29 del Decreto 327/2010 | Nueva redacción por el Decreto 483/2026 |
+| Programaciones didácticas | Redacción original del artículo 29 del Decreto 327/2010 | Decreto 483/2026, de 31 de agosto |

@@ -34,7 +34,8 @@ que la usan. Marca con `[X]` cuando una pieza esté terminada.
 | 1 Introducción y normativa | [comun/introduccion.md](comun/introduccion.md) | [ ] |
 | 2 Entorno socioeconómico y centro | [comun/contexto.md](comun/contexto.md) | [ ] |
 | 6 Metodología | [comun/metodologia.md](comun/metodologia.md) | [ ] |
-| 7.4 Criterios de calificación del departamento | [comun/criterios-departamento.md](comun/criterios-departamento.md) | [ ] |
+| 7 Evaluación (carácter, momentos, autoría, recuperación) | [comun/evaluacion.md](comun/evaluacion.md) | [ ] |
+| 7.3 Criterios comunes del Departamento de Administración (PD 2025/26) | [comun/criterios-departamento.md](comun/criterios-departamento.md) | [X] |
 | 9 Atención a la diversidad (medidas generales) | [comun/diversidad.md](comun/diversidad.md) | [ ] |
 | 10 Seguimiento de la programación | [comun/seguimiento.md](comun/seguimiento.md) | [ ] |
 | 13 Plan lector | [comun/plan-lector.md](comun/plan-lector.md) | [ ] |
@@ -50,8 +51,10 @@ vez y entra en las dos PD de primero.
 | Presentación del módulo (1) | [presentacion](modulos/ipe1/presentacion.md) | [presentacion](modulos/ipe2/presentacion.md) | [ ] [ ] |
 | 4 RA, criterios y pesos | [resultados](modulos/ipe1/resultados.md) | [resultados](modulos/ipe2/resultados.md) | [ ] [ ] |
 | 5 Contenidos, UD y temporalización | [contenidos](modulos/ipe1/contenidos.md) | [contenidos](modulos/ipe2/contenidos.md) | [ ] [ ] |
-| 6.6 Recursos | [recursos](modulos/ipe1/recursos.md) | [recursos](modulos/ipe2/recursos.md) | [ ] [ ] |
-| 7 Evaluación y calificación | [evaluacion](modulos/ipe1/evaluacion.md) | [evaluacion](modulos/ipe2/evaluacion.md) | [ ] [ ] |
+| 6.5 Recursos propios del módulo | [recursos](modulos/ipe1/recursos.md) | [recursos](modulos/ipe2/recursos.md) | [ ] [ ] |
+| 7.3 Horas de aviso y pérdida de evaluación continua | [faltas](modulos/ipe1/faltas.md) | [faltas](modulos/ipe2/faltas.md) | [X] [ ] |
+| 7.4 Ponderación de los RA | [ponderacion](modulos/ipe1/ponderacion.md) | [ponderacion](modulos/ipe2/ponderacion.md) | [ ] [ ] |
+| 7.5 Instrumentos de evaluación | [instrumentos](modulos/ipe1/instrumentos.md) | [instrumentos](modulos/ipe2/instrumentos.md) | [ ] [ ] |
 
 ### Por ciclo
 
