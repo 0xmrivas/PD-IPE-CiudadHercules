@@ -31,6 +31,20 @@ documento:
   curso_academico: "2026/2027"
   version: "borrador-02"
 
+# Registro de versiones, al final de cada PD (como en la PD del CE de Ciberseguridad).
+# Una fila por redacción o revisión; `programaciones` limita la fila a esas PD (sin él, a todas).
+versiones:
+  - responsables: ["González Kämerow, Laura"]
+    accion: "Redactado"
+    fecha: "13/10/2026"
+    version: "1.0"
+    programaciones: [ipe1-gm, ipe1-gs]
+  - responsables: ["González Kämerow, Laura"]
+    accion: "Redactado"
+    fecha: "[Fecha]"
+    version: "1.0"
+    programaciones: [ipe2-gs]
+
 apartados:
   - introduccion
   - contexto

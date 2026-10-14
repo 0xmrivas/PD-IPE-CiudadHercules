@@ -10,7 +10,7 @@ Se genera solo con cada cambio: no lo edites a mano.
 |---|---|:---:|:---:|
 | IPE I · 1.º CFGM Gestión Administrativa (grupos A y B) | [PD-IPE-I-GM.pdf](../programaciones/PD-IPE-I-GM.pdf) | 6 | ✓ |
 | IPE I · 1.º CFGS Administración y Finanzas (grupos A y B) | [PD-IPE-I-GS.pdf](../programaciones/PD-IPE-I-GS.pdf) | 7 | ✓ |
-| IPE II · 2.º CFGS Administración y Finanzas (grupos A y B) | [PD-IPE-II-GS.pdf](../programaciones/PD-IPE-II-GS.pdf) | 130 | [8](#ipe2-gs) |
+| IPE II · 2.º CFGS Administración y Finanzas (grupos A y B) | [PD-IPE-II-GS.pdf](../programaciones/PD-IPE-II-GS.pdf) | 131 | [8](#ipe2-gs) |
 
 ## Piezas
 

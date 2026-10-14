@@ -120,6 +120,13 @@ Dentro de cualquier archivo:
 - Lo que va entre corchetes, `[Así]`, cuenta como pendiente y sale en gris en el PDF.
 - Los comentarios `<!-- … -->` explican qué escribir y no salen en el PDF.
 
+## Registro de versiones
+
+Al final de cada PD sale una tabla de control de versiones (como en la PD del CE de
+Ciberseguridad). Sus filas están en `versiones` de `manifest.yml`: para registrar una
+redacción o revisión, añade una entrada con `responsables`, `accion` (Redactado,
+Revisado), `fecha` y `version`; con `programaciones` se limita a esas PD.
+
 ## Generar en local
 
 ```bash

@@ -43,6 +43,8 @@ class BuildTest(unittest.TestCase):
         self.assertNotIn("Real Decreto 1584/2011", gm)
         self.assertIn("Real Decreto 1584/2011", gs)
         self.assertIn("**Módulo profesional:** 1710", ipe2)
+        self.assertIn("| González Kämerow, Laura | Redactado | 13/10/2026 | 1.0 |", gm)
+        self.assertNotIn("13/10/2026 | 1.0", ipe2)
         piezas = {p["id"]: set(p["piezas"]) for p in self.report["programaciones"]}
         self.assertIn("modulos/ipe1/resultados.md", piezas["ipe1-gm"] & piezas["ipe1-gs"])
         self.assertIn("pd/ipe1-gm/contribucion.md", piezas["ipe1-gm"] - piezas["ipe1-gs"])

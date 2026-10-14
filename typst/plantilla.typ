@@ -97,7 +97,7 @@
     v(1.2cm)
     block(width: 100%, below: 1.1cm, {
       text(size: 10pt, weight: "semibold", fill: azul, tracking: 0.1em,
-        upper[Apartado #counter(heading).display(it.numbering)])
+        upper(if it.numbering != none [Apartado #counter(heading).display(it.numbering)] else [Control documental]))
       v(0.25cm)
       text(size: 24pt, weight: "bold", it.body)
       v(0.1cm)

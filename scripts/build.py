@@ -272,8 +272,27 @@ def front_matter(manifest: dict[str, Any], prog: Programacion) -> dict[str, Any]
     }
 
 
+def version_register(manifest: dict[str, Any], prog: Programacion) -> str:
+    """Tabla final de control de versiones con las filas de manifest.yml que afectan a esta PD."""
+    rows = [v for v in manifest.get("versiones", []) if prog.id in v.get("programaciones", [prog.id])]
+    if not rows:
+        return ""
+    lines = [
+        "# Registro de versiones {.unnumbered}",
+        "",
+        "| Responsable | Acción (Redactado, Revisado) | Fecha | Versión |",
+        "|---|---|---|---|",
+    ]
+    for v in rows:
+        people = v.get("responsables", [])
+        people = "<br>".join(people) if isinstance(people, list) else str(people)
+        lines.append(f"| {people} | {v.get('accion', '')} | {v.get('fecha', '')} | {v.get('version', '')} |")
+    return "\n".join(lines)
+
+
 def assemble(manifest: dict[str, Any], prog: Programacion) -> str:
     source = "\n\n".join(section_text(prog, name) for name in manifest["apartados"])
+    source = f"{source}\n\n{version_register(manifest, prog)}"
     # Las marcas de las tablas generadas se comprueban antes de sustituirlas
     prog.issues = structure_issues(source) + check_module(source)
     # Los comentarios de instrucciones no llegan al documento
