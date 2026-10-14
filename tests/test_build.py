@@ -32,6 +32,8 @@ class BuildTest(unittest.TestCase):
         self.assertIn("cover-groups: Grupos A y B", gm)
         self.assertIn("| Dato | Grupo A | Grupo B |", gm)
         self.assertIn("| N.º de alumnado | 25 | 26 |", gm)
+        self.assertIn("| Turno | Mañana | Mañana |", gm)
+        self.assertIn("el grupo B es más individual", gm)
         self.assertIn("Blue Zone Forum", gm)
         self.assertNotIn("Blue Zone Forum", self.read("PD-IPE-I-GS"))
 

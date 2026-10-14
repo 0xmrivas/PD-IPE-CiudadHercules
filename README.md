@@ -75,7 +75,7 @@ del módulo; IPE II usa de momento los borradores comunes.
 
 | Pieza | IPE I · GM | IPE I · GS | IPE II · GS | Finalizado |
 |---|---|---|---|---|
-| 2.4 Aula (lo común a los dos grupos) | [aula](pd/ipe1-gm/aula.md) | [aula](pd/ipe1-gs/aula.md) | [aula](pd/ipe2-gs/aula.md) | [X] [X] [ ] |
+| 2.4 Aula: descripción de los grupos | [aula](pd/ipe1-gm/aula.md) | [aula](pd/ipe1-gs/aula.md) | [aula](pd/ipe2-gs/aula.md) | [X] [X] [ ] |
 | 3.2–3.3 Objetivos y competencias a los que contribuye | [contribucion](pd/ipe1-gm/contribucion.md) | [contribucion](pd/ipe1-gs/contribucion.md) | [contribucion](pd/ipe2-gs/contribucion.md) | [X] [X] [ ] |
 | 6.3 Adaptación al nivel | [metodologia-nivel](pd/ipe1-gm/metodologia-nivel.md) | [metodologia-nivel](pd/ipe1-gs/metodologia-nivel.md) | [metodologia-nivel](pd/ipe2-gs/metodologia-nivel.md) | [ ] [ ] [ ] revisar |
 | 8 Actividades complementarias | [actividades](pd/ipe1-gm/actividades.md) | [actividades](pd/ipe1-gs/actividades.md) | [actividades](pd/ipe2-gs/actividades.md) | [X] [X] [ ] |
