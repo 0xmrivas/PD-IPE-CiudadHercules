@@ -1,15 +1,10 @@
-## Contextualización del grupo {{letra}}
+### Grupo {{letra}}
 
-<!-- Por grupo. Sin datos personales del alumnado. -->
+<!-- Por grupo. Lo que distingue a este grupo. Sin datos personales del alumnado. -->
 
-[Características del grupo {{grupo}}: procedencia (ESO, bachillerato, prueba de acceso, otros ciclos), edades, intereses, experiencia laboral y conclusiones de la evaluación inicial].
+El grupo B, con más personas adultas y trabajadoras y algunas incorporaciones recientes, parte de un nivel algo más alto y se muestra más autónomo y seguro, aunque su participación en clase es todavía escasa.
 
 | Dato | Valor |
 |---|---|
-| Turno | [Turno] |
-| N.º de alumnado | [Número] |
-| Alumnado repetidor o con el módulo pendiente | [Número o no procede] |
-| Necesidades específicas de apoyo educativo | [Número y tipo, sin datos personales] |
-| Aula y horario del módulo | [Aula y franjas horarias] |
-
-[Consecuencias para la programación: ritmo, refuerzos, agrupamientos o prioridades para este grupo].
+| N.º de alumnado | 15 |
+| Alumnado con necesidad específica de apoyo educativo | [Número y medidas acordadas, según el Departamento de Orientación y la evaluación inicial, sin datos identificativos] |

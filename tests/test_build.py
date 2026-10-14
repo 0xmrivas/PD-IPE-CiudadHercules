@@ -30,10 +30,12 @@ class BuildTest(unittest.TestCase):
     def test_portada_y_contextualizacion_de_cada_grupo(self):
         gm = self.read("PD-IPE-I-GM")
         self.assertIn("cover-groups: Grupos A y B", gm)
-        self.assertIn("## Contextualización del grupo A", gm)
-        self.assertIn("## Contextualización del grupo B", gm)
-        self.assertIn("1.º CFGM Gestión Administrativa B", gm)
-        self.assertLess(gm.index("grupo A"), gm.index("grupo B"))
+        self.assertIn("### Grupo A", gm)
+        self.assertIn("### Grupo B", gm)
+        self.assertLess(gm.index("### Grupo A"), gm.index("### Grupo B"))
+        self.assertIn("| N.º de alumnado | 25 |", gm)
+        self.assertIn("Blue Zone Forum", gm)
+        self.assertNotIn("Blue Zone Forum", self.read("PD-IPE-I-GS"))
 
     def test_ipe1_comparte_modulo_y_cambia_el_ciclo(self):
         gm, gs, ipe2 = self.read("PD-IPE-I-GM"), self.read("PD-IPE-I-GS"), self.read("PD-IPE-II-GS")

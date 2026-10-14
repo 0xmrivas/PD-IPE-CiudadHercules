@@ -4,3 +4,6 @@
 |---|---|
 | RA1 | [Peso] |
 | RA2 | [Peso] |
+| RA3 | [Peso] |
+| RA4 | [Peso] |
+| RA5 | [Peso] |

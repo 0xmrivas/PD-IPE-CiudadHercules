@@ -2,6 +2,10 @@
 
 <!-- incluir: presentacion -->
 
+<!-- ficha-modulo -->
+
+Al igual que el resto de programaciones de cada módulo profesional, esta programación sigue las directrices marcadas por la jefatura de departamento y el Equipo Técnico de Coordinación Pedagógica del Instituto. Su aprobación corresponde al Claustro de Profesorado y podrá actualizarse o modificarse tras los procesos de autoevaluación.
+
 ## Referencia normativa
 
 <!-- Común a las tres PD. La normativa del título está en ciclos/<ciclo>/normativa-titulo.md. Fuentes: marco legal de la parte general de la PD del Departamento de Informática del IES Rafael Alberti (versión del 3 de octubre de 2026) y PD de IPE I e IPE II del IES Ciudad de Hércules (2025/2026). -->
@@ -26,7 +30,7 @@
 
 **Decreto 147/2025, de 17 de septiembre** (BOJA 180, de 18 de septiembre), por el que se establece la ordenación de las enseñanzas de los grados D y E del Sistema de Formación Profesional en la Comunidad Autónoma de Andalucía. Deroga el Decreto 436/2008.
 
-**Resolución de 24 de julio de 2026**, de la Dirección General de Formación Profesional y Educación Permanente, por la que se dictan instrucciones sobre la distribución horaria y la concreción curricular de los grados D y E para el curso 2026/2027. Fija las horas y la secuenciación de los módulos este curso.
+**Resolución de 24 de julio de 2026**, de la Dirección General de Formación Profesional y Educación Permanente, por la que se dictan Instrucciones para determinar aspectos relativos a la distribución horaria y a la concreción curricular de las enseñanzas correspondientes a los grados D y E del Sistema de Formación Profesional para el curso escolar 2026/2027 en la Comunidad Autónoma de Andalucía.
 
 ### Evaluación y formación en empresa
 

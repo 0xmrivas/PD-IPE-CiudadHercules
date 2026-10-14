@@ -1,13 +1,11 @@
 # Plan lector
 
-<!-- Común. Adaptado de la parte general del Departamento de Informática del IES Rafael Alberti, con la referencia que usan las PD de IPE del centro. -->
+<!-- Común. De la PD de IPE I 2026/2027 de Laura. Las lecturas de cada módulo van en modulos/<módulo>/lecturas.md. -->
 
-De acuerdo con las Instrucciones de 21 de junio de 2023, de la Viceconsejería de Desarrollo Educativo y Formación Profesional, sobre el tratamiento de la lectura, la lectura es una actividad inherente al aprendizaje en todos los módulos.
+De acuerdo con las Instrucciones de 21 de junio de 2023 sobre el tratamiento de la lectura, la lectura es una actividad inseparable del aprendizaje y un fenómeno transversal a todos los módulos. Uno de los recursos de aprendizaje de este módulo es la lectura de publicaciones de contenido general y especializado.
 
-En {{modulo_corto}} el alumnado lee a diario textos reales del mundo laboral, que exigen comprensión precisa y espíritu crítico:
+Objetivos: favorecer la comprensión e interpretación de textos técnicos y jurídicos; ampliar el vocabulario específico; desarrollar la capacidad de proponer soluciones y juicios críticos a partir de lo leído; mejorar la expresión escrita (estructura, ortografía y presentación); y despertar la curiosidad por buscar información en fuentes fiables.
 
-- **Normativa y convenios:** Estatuto de los Trabajadores, convenio colectivo del sector y normativa de prevención de riesgos laborales.
-- **Documentos laborales:** ofertas de empleo, contratos, nóminas y comunicaciones de empresa.
-- **Prensa económica y laboral:** noticias sobre el mercado de trabajo, el empleo en la provincia y el sector del ciclo.
+Las lecturas se planificarán en tres momentos: **antes** (activación de conocimientos previos, vocabulario y propósito de la lectura), **durante** (inferencias, subrayado y comprobación de la comprensión) y **después** (recapitulación, debate y aplicación de lo leído). Las actividades propuestas son:
 
-Se acostumbra al alumnado a consultar las fuentes oficiales (BOE, BOJA, SEPE, Seguridad Social) y a contrastar la información, en lugar de quedarse con resúmenes de terceros. [Actuaciones concretas del plan lector del centro en las que participa el módulo].
+<!-- incluir: lecturas -->

@@ -25,7 +25,9 @@ documento:
   codigo_centro: "11700354"
   localidad: "Chiclana de la Frontera (Cádiz)"
   departamento: "Departamento de Administración"
-  docente: "Laura González Kåmerow"
+  docente: "Laura González Kämerow"
+  jefatura: "Manuel Jesús Puerto Crespo"
+  familia: "Administración y Gestión"
   curso_academico: "2026/2027"
   version: "borrador-02"
 
@@ -81,12 +83,13 @@ programaciones:
     curso: 1
     horas: 96
     horas_semana: 3
+    ects: 5
     grupos: ["A", "B"]
-  # Horas de IPE II: tomadas de la PD 2025/26 del centro (2.º GM). Confirmar para 2.º GS.
+  # La Resolución de 24 de julio de 2026 elimina la cifra de 105 h: se mantienen las 3 h semanales.
   - id: ipe2-gs
     modulo: ipe2
     ciclo: af
     curso: 2
-    horas: 105
-    horas_semana: null   # por confirmar
+    horas: 96
+    horas_semana: 3
     grupos: ["A", "B"]

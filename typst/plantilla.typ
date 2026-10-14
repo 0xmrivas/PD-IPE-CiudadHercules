@@ -147,15 +147,16 @@
 // ============================================================
 #counter(page).update(1)
 #page(header: none)[
-  #v(1.2cm)
+  #v(0.6cm)
   #text(size: 24pt, weight: "bold", fill: marino)[Índice]
   #v(0.1cm)
   #line(length: 1.6cm, stroke: 2pt + azul)
-  #v(0.8cm)
-  #set text(size: 10pt)
+  #v(0.5cm)
+  #set text(size: 9.5pt)
+  #set par(leading: 0.5em)
   #set outline.entry(fill: box(width: 1fr, repeat(text(fill: filete)[.], gap: 0.3em)))
   #show outline.entry.where(level: 1): it => {
-    v(0.9em, weak: true)
+    v(0.7em, weak: true)
     text(weight: "bold", fill: marino, it)
   }
   #outline(title: none, depth: 2, indent: auto)

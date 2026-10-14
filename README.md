@@ -31,64 +31,65 @@ que la usan. Marca con `[X]` cuando una pieza esté terminada.
 
 | Apartado | Archivo | Finalizado |
 |---|---|---|
-| 1 Introducción y normativa | [comun/introduccion.md](comun/introduccion.md) | [ ] |
-| 2 Entorno socioeconómico y centro | [comun/contexto.md](comun/contexto.md) | [ ] |
-| 6 Metodología | [comun/metodologia.md](comun/metodologia.md) | [ ] |
-| 7 Evaluación (carácter, momentos, autoría, recuperación) | [comun/evaluacion.md](comun/evaluacion.md) | [ ] |
+| 1 Introducción y normativa | [comun/introduccion.md](comun/introduccion.md) | [X] |
+| 2 Contexto: entorno socioeconómico y centro | [comun/contexto.md](comun/contexto.md) | [X] |
+| 2.4 Cierre del aula (cómo se tienen en cuenta los grupos) | [comun/aula-cierre.md](comun/aula-cierre.md) | [X] |
 | 7.3 Criterios comunes del Departamento de Administración (PD 2025/26) | [comun/criterios-departamento.md](comun/criterios-departamento.md) | [X] |
-| 9 Atención a la diversidad (medidas generales) | [comun/diversidad.md](comun/diversidad.md) | [ ] |
-| 10 Seguimiento de la programación | [comun/seguimiento.md](comun/seguimiento.md) | [ ] |
-| 13 Plan lector | [comun/plan-lector.md](comun/plan-lector.md) | [ ] |
-| 14 Anexo de dispositivos móviles | [comun/anexo-moviles.md](comun/anexo-moviles.md) | [ ] |
+| 7.4 Verificación de la autoría y uso de IA | [comun/verificacion-autoria.md](comun/verificacion-autoria.md) | [ ] revisar con Laura |
+| 9 Atención a la diversidad (medidas generales) | [comun/diversidad.md](comun/diversidad.md) | [X] |
+| 10 Seguimiento de la programación | [comun/seguimiento.md](comun/seguimiento.md) | [X] |
+| 13 Plan lector | [comun/plan-lector.md](comun/plan-lector.md) | [X] |
+| 14 Anexo de dispositivos móviles (falta la fecha de firma) | [comun/anexo-moviles.md](comun/anexo-moviles.md) | [ ] |
+| 6 y 7 Metodología y evaluación de IPE II (borrador del Alberti) | [comun/metodologia.md](comun/metodologia.md) · [comun/evaluacion.md](comun/evaluacion.md) | [ ] |
 
 ### Por módulo
 
-El currículo de IPE I es el mismo en grado medio y en superior: se escribe una
-vez y entra en las dos PD de primero.
+IPE I es el mismo en grado medio y en superior: se escribe una vez y entra en
+las dos PD de primero. En IPE I, metodología, evaluación y plan de formación son
+del módulo; IPE II usa de momento los borradores comunes.
 
 | Pieza | IPE I | IPE II | Finalizado |
 |---|---|---|---|
-| Presentación del módulo (1) | [presentacion](modulos/ipe1/presentacion.md) | [presentacion](modulos/ipe2/presentacion.md) | [ ] [ ] |
-| 4 RA, criterios y pesos | [resultados](modulos/ipe1/resultados.md) | [resultados](modulos/ipe2/resultados.md) | [ ] [ ] |
-| 5 Contenidos, UD y temporalización | [contenidos](modulos/ipe1/contenidos.md) | [contenidos](modulos/ipe2/contenidos.md) | [ ] [ ] |
-| 6.5 Recursos propios del módulo | [recursos](modulos/ipe1/recursos.md) | [recursos](modulos/ipe2/recursos.md) | [ ] [ ] |
-| 7.3 Horas de aviso y pérdida de evaluación continua | [faltas](modulos/ipe1/faltas.md) | [faltas](modulos/ipe2/faltas.md) | [X] [ ] |
-| 7.4 Ponderación de los RA | [ponderacion](modulos/ipe1/ponderacion.md) | [ponderacion](modulos/ipe2/ponderacion.md) | [ ] [ ] |
-| 7.5 Instrumentos de evaluación | [instrumentos](modulos/ipe1/instrumentos.md) | [instrumentos](modulos/ipe2/instrumentos.md) | [ ] [ ] |
+| 1 Presentación del módulo | [presentacion](modulos/ipe1/presentacion.md) | [presentacion](modulos/ipe2/presentacion.md) | [X] [ ] |
+| 3.4 Líneas de actuación | [lineas-actuacion](modulos/ipe1/lineas-actuacion.md) | [lineas-actuacion](modulos/ipe2/lineas-actuacion.md) | [X] [ ] |
+| 4 RA, criterios, pesos e instrumentos | [resultados](modulos/ipe1/resultados.md) | [resultados](modulos/ipe2/resultados.md) | [X] [ ] |
+| 5 Bloques, UD, temporalización y contenidos | [contenidos](modulos/ipe1/contenidos.md) | [contenidos](modulos/ipe2/contenidos.md) | [X] [ ] |
+| 6 Metodología | [metodologia](modulos/ipe1/metodologia.md) | — | [X] |
+| 6.6 Recursos propios | (en metodologia) | [recursos](modulos/ipe2/recursos.md) | [ ] |
+| 7 Evaluación | [evaluacion](modulos/ipe1/evaluacion.md) | — | [X] |
+| 7.2 Ponderación de los RA | [ponderacion](modulos/ipe1/ponderacion.md) | [ponderacion](modulos/ipe2/ponderacion.md) | [X] [ ] |
+| 7.3 Horas de aviso y pérdida de evaluación continua | [faltas](modulos/ipe1/faltas.md) | [faltas](modulos/ipe2/faltas.md) | [X] [X] |
+| 7.5 Instrumentos | (en evaluacion) | [instrumentos](modulos/ipe2/instrumentos.md) | [ ] |
+| 12 Plan de formación en empresa | [plan-formativo](modulos/ipe1/plan-formativo.md) | — | [X] |
+| 13 Lecturas del plan lector | [lecturas](modulos/ipe1/lecturas.md) | [lecturas](modulos/ipe2/lecturas.md) | [X] [ ] |
 
 ### Por ciclo
-
-Lo que depende del título, sea IPE I o IPE II.
 
 | Pieza | Gestión Administrativa | Administración y Finanzas | Finalizado |
 |---|---|---|---|
 | 1.1 Normativa del título | [normativa-titulo](ciclos/ga/normativa-titulo.md) | [normativa-titulo](ciclos/af/normativa-titulo.md) | [X] [X] |
-| 2 Entorno profesional (perfil, ocupaciones, convenio) | [entorno-profesional](ciclos/ga/entorno-profesional.md) | [entorno-profesional](ciclos/af/entorno-profesional.md) | [ ] [ ] |
-| 3 Competencia general del título | [identificacion](ciclos/ga/identificacion.md) | [identificacion](ciclos/af/identificacion.md) | [ ] [ ] |
+| 2.3 Entorno profesional (ocupaciones, convenio; faltan empresas) | [entorno-profesional](ciclos/ga/entorno-profesional.md) | [entorno-profesional](ciclos/af/entorno-profesional.md) | [ ] [ ] |
+| 3.1 Competencia general del título | [identificacion](ciclos/ga/identificacion.md) | [identificacion](ciclos/af/identificacion.md) | [X] [X] |
 
 ### Por programación
 
-Lo que cambia entre IPE I de medio, IPE I de superior e IPE II.
-
 | Pieza | IPE I · GM | IPE I · GS | IPE II · GS | Finalizado |
 |---|---|---|---|---|
-| 3 Objetivos y competencias a los que contribuye | [contribucion](pd/ipe1-gm/contribucion.md) | [contribucion](pd/ipe1-gs/contribucion.md) | [contribucion](pd/ipe2-gs/contribucion.md) | [ ] [ ] [ ] |
-| 6 Adaptación de la metodología al nivel | [metodologia-nivel](pd/ipe1-gm/metodologia-nivel.md) | [metodologia-nivel](pd/ipe1-gs/metodologia-nivel.md) | [metodologia-nivel](pd/ipe2-gs/metodologia-nivel.md) | [ ] [ ] [ ] |
-| 8 Actividades complementarias | [actividades](pd/ipe1-gm/actividades.md) | [actividades](pd/ipe1-gs/actividades.md) | [actividades](pd/ipe2-gs/actividades.md) | [ ] [ ] [ ] |
-| 11 Interdisciplinariedad | [interdisciplinariedad](pd/ipe1-gm/interdisciplinariedad.md) | [interdisciplinariedad](pd/ipe1-gs/interdisciplinariedad.md) | [interdisciplinariedad](pd/ipe2-gs/interdisciplinariedad.md) | [ ] [ ] [ ] |
-| 12 Plan formativo (dual) | [plan-formativo](pd/ipe1-gm/plan-formativo.md) | [plan-formativo](pd/ipe1-gs/plan-formativo.md) | [plan-formativo](pd/ipe2-gs/plan-formativo.md) | [ ] [ ] [ ] |
+| 2.4 Aula (lo común a los dos grupos) | [aula](pd/ipe1-gm/aula.md) | [aula](pd/ipe1-gs/aula.md) | [aula](pd/ipe2-gs/aula.md) | [X] [X] [ ] |
+| 3.2–3.3 Objetivos y competencias a los que contribuye | [contribucion](pd/ipe1-gm/contribucion.md) | [contribucion](pd/ipe1-gs/contribucion.md) | [contribucion](pd/ipe2-gs/contribucion.md) | [X] [X] [ ] |
+| 6.3 Adaptación al nivel | [metodologia-nivel](pd/ipe1-gm/metodologia-nivel.md) | [metodologia-nivel](pd/ipe1-gs/metodologia-nivel.md) | [metodologia-nivel](pd/ipe2-gs/metodologia-nivel.md) | [ ] [ ] [ ] revisar |
+| 8 Actividades complementarias | [actividades](pd/ipe1-gm/actividades.md) | [actividades](pd/ipe1-gs/actividades.md) | [actividades](pd/ipe2-gs/actividades.md) | [X] [X] [ ] |
+| 11 Interdisciplinariedad | [interdisciplinariedad](pd/ipe1-gm/interdisciplinariedad.md) | [interdisciplinariedad](pd/ipe1-gs/interdisciplinariedad.md) | [interdisciplinariedad](pd/ipe2-gs/interdisciplinariedad.md) | [X] [X] [ ] |
+| 12 Plan de formación en empresa | (del módulo) | (del módulo) | [plan-formativo](pd/ipe2-gs/plan-formativo.md) | [ ] |
 
 ### Por grupo
 
-Cada grupo tiene su contextualización y sus medidas de diversidad; la PD las
-recoge una detrás de otra.
-
 | Grupo | Contextualización | Diversidad | Finalizado |
 |---|---|---|---|
-| 1.º GA A | [contextualizacion](grupos/1ga-a/contextualizacion.md) | [diversidad-grupo](grupos/1ga-a/diversidad-grupo.md) | [ ] |
-| 1.º GA B | [contextualizacion](grupos/1ga-b/contextualizacion.md) | [diversidad-grupo](grupos/1ga-b/diversidad-grupo.md) | [ ] |
-| 1.º AyF A | [contextualizacion](grupos/1af-a/contextualizacion.md) | [diversidad-grupo](grupos/1af-a/diversidad-grupo.md) | [ ] |
-| 1.º AyF B | [contextualizacion](grupos/1af-b/contextualizacion.md) | [diversidad-grupo](grupos/1af-b/diversidad-grupo.md) | [ ] |
+| 1.º GA A (25) | [contextualizacion](grupos/1ga-a/contextualizacion.md) | [diversidad-grupo](grupos/1ga-a/diversidad-grupo.md) | [ ] falta NEAE |
+| 1.º GA B (26) | [contextualizacion](grupos/1ga-b/contextualizacion.md) | [diversidad-grupo](grupos/1ga-b/diversidad-grupo.md) | [ ] falta NEAE |
+| 1.º AyF A (15) | [contextualizacion](grupos/1af-a/contextualizacion.md) | [diversidad-grupo](grupos/1af-a/diversidad-grupo.md) | [ ] falta NEAE |
+| 1.º AyF B (15) | [contextualizacion](grupos/1af-b/contextualizacion.md) | [diversidad-grupo](grupos/1af-b/diversidad-grupo.md) | [ ] falta NEAE |
 | 2.º AyF A | [contextualizacion](grupos/2af-a/contextualizacion.md) | [diversidad-grupo](grupos/2af-a/diversidad-grupo.md) | [ ] |
 | 2.º AyF B | [contextualizacion](grupos/2af-b/contextualizacion.md) | [diversidad-grupo](grupos/2af-b/diversidad-grupo.md) | [ ] |
 

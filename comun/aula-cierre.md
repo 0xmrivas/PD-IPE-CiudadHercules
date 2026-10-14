@@ -1,0 +1,1 @@
+Estas características se tendrán en cuenta en la metodología y en las medidas de atención a la diversidad (apartados 6 y 9): tareas cortas con plazos intermedios, exposiciones orales progresivas, trabajo en grupo con roles definidos y aprovechamiento de la experiencia laboral del alumnado.

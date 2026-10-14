@@ -1,5 +1,5 @@
-## Adaptación al nivel del grupo
+## Adaptación al grupo de grado medio
 
-<!-- Por programación. Lo que cambia de la metodología común por ser grado medio: grado de autonomía, complejidad de los casos, peso del trabajo guiado frente al trabajo por proyectos. -->
+<!-- Por programación. Redactado a partir de la contextualización y de las medidas de diversidad de la PD de Laura: revisar. -->
 
-[Adaptación de la metodología al alumnado de {{ciclo}}].
+En grado medio se refuerzan la fragmentación de las tareas en pasos cortos, con plazos intermedios y entregas en clase, y el acompañamiento al empezar cada actividad, porque a una parte del alumnado le cuesta arrancar y estudia solo antes del examen. Los conceptos que más confunden (trabajo por cuenta ajena, accidente de trabajo, representación de las personas trabajadoras) se trabajan con ejemplos cercanos y se repasan de forma periódica.

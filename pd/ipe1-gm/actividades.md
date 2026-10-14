@@ -1,7 +1,11 @@
 # Actividades complementarias y extraescolares
 
-<!-- Por programación: actividades de este curso y ciclo. -->
+<!-- Por programación. De la PD de IPE I 2026/2027 de Laura; el Blue Zone Forum es solo para 1.º CFGM. -->
 
-| Actividad | Relación con el módulo | Fecha prevista |
-|---|---|---|
-| [Actividad] | [RA o UD relacionada] | [Trimestre] |
+Se fomentará la asistencia a charlas y talleres ofertados al centro o al Departamento de Administración que resulten de interés para el módulo. En principio se proponen:
+
+- **Taller de primeros auxilios y soporte vital básico** (UD 5, primer trimestre), impartido por la enfermera de referencia del centro o, en su defecto, por personal voluntario de Cruz Roja.
+- **Asistencia al Blue Zone Forum** (Cádiz, octubre de 2026) con el alumnado de 1º CFGM A y B: foro sobre economía azul y sostenibilidad que permite conocer de primera mano oportunidades de empleo y empresas de la zona, vinculado al RA 1 (UD 1, oportunidades de empleo en el sector) y a la educación en valores ambientales.
+- Charla sobre derechos laborales y negociación colectiva a cargo de una organización sindical o de la Inspección de Trabajo (Bloque 3).
+- Charla de orientación laboral (Andalucía Orienta, SEPE o servicio municipal de empleo de Chiclana) en el Bloque 4.
+- Participación en las actividades del Departamento (visitas a empresas de la zona) y en las efemérides del centro (25 de noviembre, 8 de marzo, 28 de abril).

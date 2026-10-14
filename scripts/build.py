@@ -107,6 +107,8 @@ def make_programacion(manifest: dict[str, Any], entry: dict[str, Any]) -> Progra
         "localidad": doc.get("localidad", ""),
         "departamento": doc["departamento"],
         "docente": doc["docente"],
+        "jefatura": doc.get("jefatura", "[Jefatura de departamento]"),
+        "familia": doc.get("familia", ""),
         "curso_academico": doc["curso_academico"],
         "modulo": module["titulo"],
         "modulo_corto": module["corto"],
@@ -192,15 +194,18 @@ def expand(prog: Programacion, text: str, chain: tuple[str, ...], variables: dic
 def ficha(prog: Programacion) -> str:
     v = prog.variables
     weekly = f" ({v['horas_semana']} horas semanales)" if prog.entry.get("horas_semana") else " ([Horas semanales])"
-    return "\n".join([
+    lines = [
         f"- **Módulo profesional:** {v['codigo']}. {v['modulo']}",
+        f"- **Familia profesional:** {v['familia']}" if v["familia"] else "",
         f"- **Ciclo formativo:** {v['titulo_ciclo']} ({v['grado'].lower()})",
         f"- **Curso y grupos:** {v['curso']} curso, {v['grupos']}",
         f"- **Duración:** {v['horas']} horas{weekly}",
+        f"- **Equivalencia en créditos ECTS:** {prog.entry['ects']}" if prog.entry.get("ects") else "",
         f"- **Docente:** {v['docente']}",
-        f"- **Departamento:** {v['departamento']}",
+        f"- **Departamento:** {v['departamento']} (jefatura: {v['jefatura']})",
         f"- **Curso académico:** {v['curso_academico']}",
-    ])
+    ]
+    return "\n".join(line for line in lines if line)
 
 
 def section_text(prog: Programacion, name: str) -> str:
@@ -244,7 +249,8 @@ def assemble(manifest: dict[str, Any], prog: Programacion) -> str:
     source = "\n\n".join(section_text(prog, name) for name in manifest["apartados"])
     # Las marcas de las tablas generadas se comprueban antes de sustituirlas
     prog.issues = structure_issues(source) + check_module(source)
-    body = render_planning(source)
+    # Los comentarios de instrucciones no llegan al documento
+    body = re.sub(r"\n{3,}", "\n\n", COMMENT.sub("", render_planning(source)))
     prog.pending = pending_fields(body)
     code = indented_code_lines(body)
     if code:
