@@ -24,10 +24,11 @@ class BuildTest(unittest.TestCase):
     def test_una_pd_por_grupo(self):
         salidas = [p["salida"] for p in self.report["programaciones"]]
         self.assertEqual(salidas, ["PD-IPE-I-1GA-A.pdf", "PD-IPE-I-1GA-B.pdf", "PD-IPE-I-1AF-A.pdf",
-                                   "PD-IPE-I-1AF-B.pdf", "PD-IPE-II-2AF.pdf"])
+                                   "PD-IPE-I-1AF-B.pdf", "PD-IPE-II-2AF-A.pdf",
+                                   "PD-IPE-II-2AF-B.pdf"])
 
     def test_datos_del_grupo_y_del_ciclo(self):
-        ga_a, af_b, af2 = self.read("PD-IPE-I-1GA-A"), self.read("PD-IPE-I-1AF-B"), self.read("PD-IPE-II-2AF")
+        ga_a, af_b, af2 = self.read("PD-IPE-I-1GA-A"), self.read("PD-IPE-I-1AF-B"), self.read("PD-IPE-II-2AF-B")
         self.assertIn("Grupo A", ga_a)
         self.assertIn("1.º CFGM Gestión Administrativa A", ga_a)
         self.assertIn("Real Decreto 1631/2009", ga_a)

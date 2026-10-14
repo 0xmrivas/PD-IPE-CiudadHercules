@@ -11,7 +11,8 @@ Cada grupo tiene su propia programación. Los PDF se generan solos con cada camb
 | IPE I (1709) | 1.º CFGM Gestión Administrativa B | [PD-IPE-I-1GA-B.pdf](programaciones/PD-IPE-I-1GA-B.pdf) |
 | IPE I (1709) | 1.º CFGS Administración y Finanzas A | [PD-IPE-I-1AF-A.pdf](programaciones/PD-IPE-I-1AF-A.pdf) |
 | IPE I (1709) | 1.º CFGS Administración y Finanzas B | [PD-IPE-I-1AF-B.pdf](programaciones/PD-IPE-I-1AF-B.pdf) |
-| IPE II (1710) | 2.º CFGS Administración y Finanzas | [PD-IPE-II-2AF.pdf](programaciones/PD-IPE-II-2AF.pdf) |
+| IPE II (1710) | 2.º CFGS Administración y Finanzas A | [PD-IPE-II-2AF-A.pdf](programaciones/PD-IPE-II-2AF-A.pdf) |
+| IPE II (1710) | 2.º CFGS Administración y Finanzas B | [PD-IPE-II-2AF-B.pdf](programaciones/PD-IPE-II-2AF-B.pdf) |
 
 Lo que falta por completar y lo que no cuadra está en [docs/estado.md](docs/estado.md).
 

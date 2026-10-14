@@ -92,9 +92,17 @@ programaciones:
     horas: 96
     horas_semana: 3
   # Horas de IPE II: tomadas de la PD 2025/26 del centro (2.º GM). Confirmar para 2.º GS.
-  - grupo: 2af
+  - grupo: 2af-a
     modulo: ipe2
     ciclo: af
     curso: 2
+    letra: "A"
+    horas: 105
+    horas_semana: null   # por confirmar
+  - grupo: 2af-b
+    modulo: ipe2
+    ciclo: af
+    curso: 2
+    letra: "B"
     horas: 105
     horas_semana: null   # por confirmar
