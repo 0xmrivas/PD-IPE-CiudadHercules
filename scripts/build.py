@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Valida y ensambla las programaciones didácticas individuales de IPE.
+"""Valida y ensambla las programaciones didácticas de IPE.
 
-Cada programación del manifiesto da un Markdown en build/<grupo>.md, que
-build-pdf.sh convierte en PDF. Los apartados se resuelven por capas (ver
-manifest.yml): grupo → módulo en el ciclo → módulo → ciclo → común.
+Cada programación del manifiesto es un documento para todos sus grupos y da
+un Markdown en build/PD-<módulo>-<nivel>.md, que build-pdf.sh convierte en
+PDF. Los apartados se resuelven por capas (ver manifest.yml):
+pd → módulo → ciclo → común; lo de cada grupo, con <!-- por-grupo: … -->.
 """
 
 from __future__ import annotations
@@ -26,25 +27,22 @@ from texto import indented_code_lines, normalize_markdown, table_breaks  # noqa:
 ROOT = Path(__file__).resolve().parents[1]
 BUILD_DIR = ROOT / "build"
 STATUS_FILE = ROOT / "docs" / "estado.md"
-SCHEMA_VERSION = 1
+SCHEMA_VERSION = 2
 
 INCLUDE = re.compile(r"^[ \t]*<!--\s*incluir:\s*([a-z0-9][a-z0-9-]*)\s*-->[ \t]*$", re.MULTILINE)
+PER_GROUP = re.compile(r"^[ \t]*<!--\s*por-grupo:\s*([a-z0-9][a-z0-9-]*)\s*-->[ \t]*$", re.MULTILINE)
 VARIABLE = re.compile(r"\{\{\s*([a-z_]+)\s*\}\}")
+COMMENT = re.compile(r"<!--.*?-->", re.DOTALL)
 FICHA = "<!-- ficha-modulo -->"
 ORDINAL = {1: "1.º", 2: "2.º"}
-
-# Abreviatura de cada capa para la tabla de procedencia de docs/estado.md
-LAYER_LABELS = {
-    "grupo": ("G", "propio del grupo"),
-    "modulo-ciclo": ("MC", "del módulo en este ciclo"),
-    "modulo": ("M", "del módulo"),
-    "ciclo": ("C", "del ciclo"),
-    "comun": ("·", "común"),
-}
 
 
 class ValidationError(Exception):
     pass
+
+
+def letters(groups: list[str]) -> str:
+    return groups[0] if len(groups) == 1 else ", ".join(groups[:-1]) + " y " + groups[-1]
 
 
 @dataclass
@@ -54,18 +52,19 @@ class Programacion:
     cycle: dict[str, Any]
     variables: dict[str, str]
     layers: list[tuple[str, Path]]
-    origin: dict[str, str] = field(default_factory=dict)
+    groups: list[dict[str, Any]]
+    used: set[Path] = field(default_factory=set)
     warnings: list[str] = field(default_factory=list)
     pending: int = 0
     issues: list[str] = field(default_factory=list)
 
     @property
     def id(self) -> str:
-        return self.entry["grupo"]
+        return self.entry["id"]
 
     @property
     def output_name(self) -> str:
-        return f"PD-{self.module['corto'].replace(' ', '-')}-{self.id.upper()}"
+        return f"PD-{self.module['corto'].replace(' ', '-')}-{self.cycle['nivel']}"
 
 
 def load_manifest(path: Path) -> dict[str, Any]:
@@ -83,31 +82,29 @@ def load_manifest(path: Path) -> dict[str, Any]:
     for key in ("centro", "departamento", "docente", "curso_academico", "version"):
         if not data["documento"].get(key):
             raise ValidationError(f"Falta documento.{key} en manifest.yml")
-    ids = [p.get("grupo") for p in data["programaciones"]]
+    ids = [p.get("id") for p in data["programaciones"]]
     if len(set(ids)) != len(ids) or not all(isinstance(i, str) and re.fullmatch(r"[a-z0-9-]+", i) for i in ids):
-        raise ValidationError("Cada programación necesita un «grupo» único en minúsculas (p. ej. 1ga-a)")
+        raise ValidationError("Cada programación necesita un «id» único en minúsculas (p. ej. ipe1-gm)")
     return data
 
 
-def group_label(entry: dict[str, Any], cycle: dict[str, Any]) -> str:
-    label = f"{ORDINAL.get(entry['curso'], str(entry['curso']) + '.º')} {cycle['corto']}"
-    return f"{label} {entry['letra']}" if entry.get("letra") else label
-
-
 def make_programacion(manifest: dict[str, Any], entry: dict[str, Any]) -> Programacion:
-    for key in ("grupo", "modulo", "ciclo", "curso", "horas"):
-        if entry.get(key) in (None, ""):
-            raise ValidationError(f"La programación {entry.get('grupo', '?')} no tiene «{key}»")
+    for key in ("id", "modulo", "ciclo", "curso", "horas", "grupos"):
+        if entry.get(key) in (None, "", []):
+            raise ValidationError(f"La programación {entry.get('id', '?')} no tiene «{key}»")
     module = manifest["modulos"].get(entry["modulo"])
     cycle = manifest["ciclos"].get(entry["ciclo"])
     if not module or not cycle:
-        raise ValidationError(f"{entry['grupo']}: módulo o ciclo no declarado en manifest.yml")
+        raise ValidationError(f"{entry['id']}: módulo o ciclo no declarado en manifest.yml")
     doc = manifest["documento"]
+    course = ORDINAL.get(entry["curso"], f"{entry['curso']}.º")
     weekly = entry.get("horas_semana")
+    group_letters = [str(g) for g in entry["grupos"]]
+    plural = "grupos" if len(group_letters) > 1 else "grupo"
     variables = {
         "centro": doc["centro"],
-        "localidad": doc.get("localidad", ""),
         "codigo_centro": str(doc.get("codigo_centro", "")),
+        "localidad": doc.get("localidad", ""),
         "departamento": doc["departamento"],
         "docente": doc["docente"],
         "curso_academico": doc["curso_academico"],
@@ -119,63 +116,86 @@ def make_programacion(manifest: dict[str, Any], entry: dict[str, Any]) -> Progra
         "ciclo": cycle["corto"],
         "titulo_ciclo": cycle["titulo"],
         "grado": cycle["grado"],
-        "curso": ORDINAL.get(entry["curso"], f"{entry['curso']}.º"),
-        "letra": entry.get("letra", ""),
-        "grupo": group_label(entry, cycle),
+        "curso": course,
+        "grupos": f"{plural} {letters(group_letters)}",
+        "grupo": f"{course} {cycle['corto']} ({plural} {letters(group_letters)})",
+        "letra": "",
     }
+    groups = []
+    for letter in group_letters:
+        folder = ROOT / "grupos" / f"{entry['curso']}{entry['ciclo']}-{letter.lower()}"
+        groups.append({
+            "letra": letter,
+            "carpeta": folder,
+            "variables": {**variables, "letra": letter, "grupo": f"{course} {cycle['corto']} {letter}"},
+        })
     layers = [
-        ("grupo", ROOT / "grupos" / entry["grupo"]),
-        ("modulo-ciclo", ROOT / "modulos" / entry["modulo"] / entry["ciclo"]),
+        ("pd", ROOT / "pd" / entry["id"]),
         ("modulo", ROOT / "modulos" / entry["modulo"]),
         ("ciclo", ROOT / "ciclos" / entry["ciclo"]),
         ("comun", ROOT / "comun"),
     ]
-    return Programacion(entry, module, cycle, variables, layers)
+    return Programacion(entry, module, cycle, variables, layers, groups)
 
 
-def resolve(prog: Programacion, name: str) -> tuple[str, Path] | None:
+def resolve(prog: Programacion, name: str) -> Path | None:
     """Primera capa que tiene <name>.md."""
-    for layer, folder in prog.layers:
+    for _, folder in prog.layers:
         candidate = folder / f"{name}.md"
         if candidate.is_file():
-            return layer, candidate
+            return candidate
     return None
 
 
-def expand(prog: Programacion, text: str, chain: tuple[str, ...]) -> str:
+def substitute(prog: Programacion, text: str, variables: dict[str, str]) -> str:
+    def value(match: re.Match) -> str:
+        key = match.group(1)
+        if key not in variables:
+            prog.warnings.append(f"variable desconocida {{{{{key}}}}}")
+            return match.group(0)
+        return variables[key]
+
+    return VARIABLE.sub(value, text)
+
+
+def expand(prog: Programacion, text: str, chain: tuple[str, ...], variables: dict[str, str]) -> str:
+    """Resuelve inclusiones y fragmentos por grupo; luego sustituye las variables."""
+
     def include(match: re.Match) -> str:
         name = match.group(1)
         if name in chain:
             raise ValidationError(f"{prog.id}: inclusión circular {' → '.join(chain + (name,))}")
-        found = resolve(prog, name)
-        if not found:
+        path = resolve(prog, name)
+        if not path:
             prog.warnings.append(f"no existe el fragmento «{name}» en ninguna capa")
             return f"[Fragmento «{name}» por redactar]"
-        prog.origin.setdefault(name, found[0])
-        return expand(prog, found[1].read_text(encoding="utf-8").strip(), chain + (name,))
+        prog.used.add(path)
+        return expand(prog, path.read_text(encoding="utf-8").strip(), chain + (name,), variables)
 
-    return INCLUDE.sub(include, text)
+    def per_group(match: re.Match) -> str:
+        name = match.group(1)
+        parts = []
+        for group in prog.groups:
+            path = group["carpeta"] / f"{name}.md"
+            if not path.is_file():
+                prog.warnings.append(f"falta {path.relative_to(ROOT)}")
+                parts.append(f"[{name} del grupo {group['letra']} por redactar]")
+                continue
+            prog.used.add(path)
+            parts.append(expand(prog, path.read_text(encoding="utf-8").strip(), chain + (name,), group["variables"]))
+        return "\n\n".join(parts)
 
-
-def substitute(prog: Programacion, text: str) -> str:
-    def value(match: re.Match) -> str:
-        key = match.group(1)
-        if key not in prog.variables:
-            prog.warnings.append(f"variable desconocida {{{{{key}}}}}")
-            return match.group(0)
-        return prog.variables[key]
-
-    return VARIABLE.sub(value, text)
+    text = PER_GROUP.sub(per_group, INCLUDE.sub(include, text))
+    return substitute(prog, text, variables)
 
 
 def ficha(prog: Programacion) -> str:
     v = prog.variables
     weekly = f" ({v['horas_semana']} horas semanales)" if prog.entry.get("horas_semana") else " ([Horas semanales])"
-    group = f"{v['curso']} curso, grupo {v['letra']}" if v["letra"] else f"{v['curso']} curso"
     return "\n".join([
         f"- **Módulo profesional:** {v['codigo']}. {v['modulo']}",
         f"- **Ciclo formativo:** {v['titulo_ciclo']} ({v['grado'].lower()})",
-        f"- **Curso y grupo:** {group}",
+        f"- **Curso y grupos:** {v['curso']} curso, {v['grupos']}",
         f"- **Duración:** {v['horas']} horas{weekly}",
         f"- **Docente:** {v['docente']}",
         f"- **Departamento:** {v['departamento']}",
@@ -184,46 +204,44 @@ def ficha(prog: Programacion) -> str:
 
 
 def section_text(prog: Programacion, name: str) -> str:
-    found = resolve(prog, name)
-    if not found:
+    path = resolve(prog, name)
+    if not path:
         raise ValidationError(
-            f"{prog.id}: no existe el apartado «{name}» (búscalo como {name}.md en grupos/, modulos/, ciclos/ o comun/)"
+            f"{prog.id}: no existe el apartado «{name}» (búscalo como {name}.md en pd/, modulos/, ciclos/ o comun/)"
         )
-    layer, path = found
-    prog.origin[name] = layer
+    prog.used.add(path)
     text = path.read_text(encoding="utf-8").strip()
     headings = re.findall(r"^# +(.+)$", text, flags=re.MULTILINE)
     if len(headings) != 1 or not text.startswith("# "):
         raise ValidationError(f"{path.relative_to(ROOT)}: debe empezar por un único título «# …»")
     if re.match(r"^\d+[.) ]", headings[0]):
         raise ValidationError(f"{path.relative_to(ROOT)}: el título no lleva numeración (la pone la maquetación)")
-    text = expand(prog, text, (name,))
-    return substitute(prog, text).replace(FICHA, ficha(prog))
+    return expand(prog, text, (name,), prog.variables).replace(FICHA, ficha(prog))
 
 
 def front_matter(manifest: dict[str, Any], prog: Programacion) -> dict[str, Any]:
     doc, v = manifest["documento"], prog.variables
-    detail = f"Módulo {v['codigo']} · {v['curso']} {v['ciclo']}" + (f" · Grupo {v['letra']}" if v["letra"] else "")
+    groups = f"{v['grupos'][0].upper()}{v['grupos'][1:]}"
     return {
         "title": f"Programación Didáctica · {v['modulo']} · {v['grupo']}",
         "lang": "es",
         "cover-title": "Programación Didáctica",
         "cover-subtitle": v["modulo"],
-        "cover-detail": detail,
+        "cover-detail": f"Módulo {v['codigo']} · {v['curso']} {v['ciclo']}",
+        "cover-groups": groups,
         "teacher": doc["docente"],
         "department": doc["departamento"],
         "institution": doc["centro"],
         "city": doc.get("localidad", ""),
         "academic-year": doc["curso_academico"],
         "version": str(doc["version"]),
-        "header-title": f"{v['modulo_corto']} · {v['curso']} {v['ciclo']}" + (f" · Grupo {v['letra']}" if v["letra"] else ""),
+        "header-title": f"{v['modulo_corto']} · {v['curso']} {v['ciclo']} · {groups}",
         "module-level": 0,
     }
 
 
 def assemble(manifest: dict[str, Any], prog: Programacion) -> str:
-    parts = [section_text(prog, name) for name in manifest["apartados"]]
-    source = "\n\n".join(parts)
+    source = "\n\n".join(section_text(prog, name) for name in manifest["apartados"])
     # Las marcas de las tablas generadas se comprueban antes de sustituirlas
     prog.issues = structure_issues(source) + check_module(source)
     body = render_planning(source)
@@ -235,7 +253,22 @@ def assemble(manifest: dict[str, Any], prog: Programacion) -> str:
     return table_breaks(normalize_markdown(f"---\n{meta}\n---\n\n{body}")).rstrip() + "\n"
 
 
-def status_report(manifest: dict[str, Any], progs: list[Programacion]) -> str:
+# ---------- Estado ----------
+
+PIECE_GROUPS = [
+    ("comun", "Común a todas las programaciones", "Se escribe una vez y vale para las tres PD."),
+    ("modulos", "Por módulo", "RA, criterios, UD y evaluación. IPE I es el mismo en grado medio y superior."),
+    ("ciclos", "Por ciclo", "Lo que depende del título: normativa, competencia general y perfil profesional."),
+    ("pd", "Por programación", "Lo propio de cada PD: contribución al título, nivel, interdisciplinariedad, dual y actividades."),
+    ("grupos", "Por grupo", "La contextualización y la diversidad de cada grupo."),
+]
+
+
+def piece_pending(path: Path) -> int:
+    return pending_fields(COMMENT.sub("", path.read_text(encoding="utf-8")))
+
+
+def status_report(progs: list[Programacion]) -> str:
     from urllib.parse import quote
 
     lines = [
@@ -257,26 +290,28 @@ def status_report(manifest: dict[str, Any], progs: list[Programacion]) -> str:
             f"| {prog.variables['modulo_corto']} · {prog.variables['grupo']} | [{prog.output_name}.pdf]({pdf}) "
             f"| {prog.pending or '✓'} | {f'[{issues}](#{prog.id})' if issues else '✓'} |"
         )
-    names = list(manifest["apartados"]) + sorted({n for p in progs for n in p.origin} - set(manifest["apartados"]))
-    lines += [
-        "",
-        "## De dónde sale cada apartado",
-        "",
-        "Lo que diferencia una programación de otra. "
-        + ", ".join(f"**{abbr}** {text}" for abbr, text in LAYER_LABELS.values()) + ".",
-        "Los fragmentos incluidos con `<!-- incluir: … -->` van al final.",
-        "",
-        "| Apartado | " + " | ".join(p.id.upper() for p in progs) + " |",
-        "|---|" + ":---:|" * len(progs),
-    ]
-    for name in names:
-        row = [LAYER_LABELS[p.origin[name]][0] if name in p.origin else "—" for p in progs]
-        lines.append(f"| {name} | " + " | ".join(row) + " |")
+
+    users: dict[Path, list[str]] = {}
+    for prog in progs:
+        for path in prog.used:
+            users.setdefault(path, []).append(prog.output_name.removeprefix("PD-"))
+    lines += ["", "## Piezas", "", "Cada archivo, lo que le falta y en qué programaciones entra.", ""]
+    for folder, title, note in PIECE_GROUPS:
+        paths = sorted((p for p in users if p.relative_to(ROOT).parts[0] == folder), key=lambda p: str(p))
+        if not paths:
+            continue
+        lines += [f"### {title}", "", note, "", "| Archivo | Por completar | Entra en |", "|---|:---:|---|"]
+        for path in paths:
+            rel = path.relative_to(ROOT).as_posix()
+            pending = piece_pending(path)
+            lines.append(f"| [{rel}](../{quote(rel)}) | {pending or '✓'} | {', '.join(sorted(users[path]))} |")
+        lines.append("")
+
     details = [p for p in progs if p.issues or p.warnings]
     if details:
-        lines += ["", "## Qué revisar", ""]
+        lines += ["## Qué revisar", ""]
         for prog in details:
-            lines += [f'<a name="{prog.id}"></a>', "", f"**{prog.variables['modulo_corto']} · {prog.variables['grupo']}**", ""]
+            lines += [f'<a name="{prog.id}"></a>', "", f"**{prog.output_name}**", ""]
             lines += [f"- {text[0].upper()}{text[1:]}." for text in prog.issues + prog.warnings] + [""]
     return "\n".join(lines).rstrip() + "\n"
 
@@ -287,7 +322,7 @@ def build(manifest_path: Path, only: list[str] | None = None) -> dict[str, Any]:
     if only:
         unknown = set(only) - {p.id for p in progs}
         if unknown:
-            raise ValidationError(f"Grupos desconocidos: {', '.join(sorted(unknown))}")
+            raise ValidationError(f"Programaciones desconocidas: {', '.join(sorted(unknown))}")
         progs = [p for p in progs if p.id in only]
     outputs = {prog.output_name: assemble(manifest, prog) for prog in progs}
 
@@ -298,17 +333,18 @@ def build(manifest_path: Path, only: list[str] | None = None) -> dict[str, Any]:
         (BUILD_DIR / f"{name}.md").write_text(text, encoding="utf-8")
     if not only:
         STATUS_FILE.parent.mkdir(exist_ok=True)
-        STATUS_FILE.write_text(status_report(manifest, progs), encoding="utf-8")
+        STATUS_FILE.write_text(status_report(progs), encoding="utf-8")
 
     report = {
         "version": manifest["documento"]["version"],
         "programaciones": [
             {
-                "grupo": p.id,
+                "id": p.id,
                 "salida": f"{p.output_name}.pdf",
+                "grupos": [g["letra"] for g in p.groups],
                 "por_completar": p.pending,
                 "revisar": p.issues + p.warnings,
-                "procedencia": p.origin,
+                "piezas": sorted(path.relative_to(ROOT).as_posix() for path in p.used),
             }
             for p in progs
         ],
@@ -319,16 +355,16 @@ def build(manifest_path: Path, only: list[str] | None = None) -> dict[str, Any]:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("grupos", nargs="*", help="Generar solo estos grupos (p. ej. 1ga-a)")
+    parser.add_argument("programaciones", nargs="*", help="Generar solo estas (p. ej. ipe1-gm)")
     parser.add_argument("--manifest", type=Path, default=ROOT / "manifest.yml")
     args = parser.parse_args()
     try:
-        report = build(args.manifest, args.grupos or None)
+        report = build(args.manifest, args.programaciones or None)
     except ValidationError as exc:
         print(f"ERROR: {exc}", file=sys.stderr)
         return 1
     for item in report["programaciones"]:
-        print(f"  {item['salida']:<24} por completar: {item['por_completar']:>3}   revisar: {len(item['revisar'])}")
+        print(f"  {item['salida']:<20} por completar: {item['por_completar']:>3}   revisar: {len(item['revisar'])}")
     return 0
 
 

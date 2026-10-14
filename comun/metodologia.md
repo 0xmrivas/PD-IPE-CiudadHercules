@@ -2,11 +2,15 @@
 
 ## Principios metodológicos
 
-[Principios: aprendizaje activo, aplicación al entorno profesional del {{ciclo}}].
+<!-- Común a las tres PD. -->
+
+[Principios: aprendizaje activo y significativo, orientación profesional, aplicación al entorno del {{ciclo}}].
 
 ## Estrategias metodológicas
 
 [Estrategias concretas del módulo].
+
+<!-- incluir: metodologia-nivel -->
 
 ## Actividades de enseñanza-aprendizaje
 
@@ -16,6 +20,4 @@
 
 [Agrupamientos y uso del aula].
 
-## Recursos materiales y didácticos
-
-[Plataforma, materiales propios, recursos web, bibliografía].
+<!-- incluir: recursos -->

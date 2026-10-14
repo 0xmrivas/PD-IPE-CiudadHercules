@@ -35,6 +35,7 @@
   titulo: [$if(cover-title)$$cover-title$$else$Programación Didáctica$endif$],
   subtitulo: $if(cover-subtitle)$[$cover-subtitle$]$else$none$endif$,
   detalle: $if(cover-detail)$[$cover-detail$]$else$none$endif$,
+  grupos: $if(cover-groups)$[$cover-groups$]$else$none$endif$,
   docente: $if(teacher)$[$teacher$]$else$none$endif$,
   departamento: [$department$],
   centro: [$institution$],

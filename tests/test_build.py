@@ -21,38 +21,43 @@ class BuildTest(unittest.TestCase):
     def read(self, name):
         return (ROOT / "build" / f"{name}.md").read_text(encoding="utf-8")
 
-    def test_una_pd_por_grupo(self):
+    def test_una_pd_por_modulo_y_nivel(self):
         salidas = [p["salida"] for p in self.report["programaciones"]]
-        self.assertEqual(salidas, ["PD-IPE-I-1GA-A.pdf", "PD-IPE-I-1GA-B.pdf", "PD-IPE-I-1AF-A.pdf",
-                                   "PD-IPE-I-1AF-B.pdf", "PD-IPE-II-2AF-A.pdf",
-                                   "PD-IPE-II-2AF-B.pdf"])
+        self.assertEqual(salidas, ["PD-IPE-I-GM.pdf", "PD-IPE-I-GS.pdf", "PD-IPE-II-GS.pdf"])
+        for p in self.report["programaciones"]:
+            self.assertEqual(p["grupos"], ["A", "B"])
 
-    def test_datos_del_grupo_y_del_ciclo(self):
-        ga_a, af_b, af2 = self.read("PD-IPE-I-1GA-A"), self.read("PD-IPE-I-1AF-B"), self.read("PD-IPE-II-2AF-B")
-        self.assertIn("Grupo A", ga_a)
-        self.assertIn("1.º CFGM Gestión Administrativa A", ga_a)
-        self.assertIn("Real Decreto 1631/2009", ga_a)
-        self.assertNotIn("Real Decreto 1584/2011", ga_a)
-        self.assertIn("Real Decreto 1584/2011", af_b)
-        self.assertIn("**Módulo profesional:** 1710", af2)
-        self.assertIn("Laura González Kåmerow", af2)
-        for text in (ga_a, af_b, af2):
+    def test_portada_y_contextualizacion_de_cada_grupo(self):
+        gm = self.read("PD-IPE-I-GM")
+        self.assertIn("cover-groups: Grupos A y B", gm)
+        self.assertIn("## Contextualización del grupo A", gm)
+        self.assertIn("## Contextualización del grupo B", gm)
+        self.assertIn("1.º CFGM Gestión Administrativa B", gm)
+        self.assertLess(gm.index("grupo A"), gm.index("grupo B"))
+
+    def test_ipe1_comparte_modulo_y_cambia_el_ciclo(self):
+        gm, gs, ipe2 = self.read("PD-IPE-I-GM"), self.read("PD-IPE-I-GS"), self.read("PD-IPE-II-GS")
+        self.assertIn("Real Decreto 1631/2009", gm)
+        self.assertNotIn("Real Decreto 1584/2011", gm)
+        self.assertIn("Real Decreto 1584/2011", gs)
+        self.assertIn("**Módulo profesional:** 1710", ipe2)
+        piezas = {p["id"]: set(p["piezas"]) for p in self.report["programaciones"]}
+        self.assertIn("modulos/ipe1/resultados.md", piezas["ipe1-gm"] & piezas["ipe1-gs"])
+        self.assertIn("pd/ipe1-gm/contribucion.md", piezas["ipe1-gm"] - piezas["ipe1-gs"])
+        for text in (gm, gs, ipe2):
             self.assertNotIn("{{", text)
             self.assertNotIn("<!-- incluir", text)
+            self.assertNotIn("<!-- por-grupo", text)
             self.assertNotIn("<!-- tabla-relacion-ra -->", text)
 
-    def test_la_capa_de_grupo_manda(self):
-        procedencia = {p["grupo"]: p["procedencia"] for p in self.report["programaciones"]}
-        self.assertEqual(procedencia["1ga-a"]["grupo"], "grupo")
-        self.assertEqual(procedencia["1ga-a"]["contribucion"], "modulo-ciclo")
-        self.assertEqual(procedencia["1ga-a"]["introduccion"], "comun")
-        tmp = ROOT / "grupos" / "1ga-b" / "metodologia.md"
+    def test_la_capa_pd_manda_sobre_la_comun(self):
+        tmp = ROOT / "pd" / "ipe1-gs" / "metodologia.md"
         self.assertFalse(tmp.exists())
         try:
-            tmp.write_text("# Metodología\n\nTexto exclusivo del grupo B.\n", encoding="utf-8")
-            build.build(ROOT / "manifest.yml", ["1ga-a", "1ga-b"])
-            self.assertIn("exclusivo del grupo B", self.read("PD-IPE-I-1GA-B"))
-            self.assertNotIn("exclusivo del grupo B", self.read("PD-IPE-I-1GA-A"))
+            tmp.write_text("# Metodología\n\nTexto exclusivo del superior.\n", encoding="utf-8")
+            build.build(ROOT / "manifest.yml", ["ipe1-gm", "ipe1-gs"])
+            self.assertIn("exclusivo del superior", self.read("PD-IPE-I-GS"))
+            self.assertNotIn("exclusivo del superior", self.read("PD-IPE-I-GM"))
         finally:
             tmp.unlink(missing_ok=True)
             build.build(ROOT / "manifest.yml")
@@ -63,7 +68,7 @@ class BuildTest(unittest.TestCase):
             path = Path(tmp) / "manifest.yml"
             path.write_text(manifest, encoding="utf-8")
             with self.assertRaises(build.ValidationError):
-                build.build(path, ["1ga-a"])
+                build.build(path, ["ipe1-gm"])
         build.build(ROOT / "manifest.yml")
 
 

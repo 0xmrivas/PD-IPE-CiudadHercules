@@ -31,7 +31,8 @@
 #let portada(
   titulo: [Programación Didáctica],
   subtitulo: none,           // el módulo
-  detalle: none,             // código, ciclo y grupo
+  detalle: none,             // código y ciclo
+  grupos: none,              // «Grupos A y B»
   docente: none,
   departamento: [],
   centro: [],
@@ -79,6 +80,11 @@
     #if detalle != none {
       v(0.35cm)
       text(size: 13.5pt, fill: suave, detalle)
+    }
+    #if grupos != none {
+      v(0.5cm)
+      box(fill: azul, inset: (x: 0.35cm, y: 0.2cm), radius: 2pt,
+        text(size: 12pt, weight: "bold", tracking: 0.08em, upper(grupos)))
     }
     #v(1fr)
     #if docente != none {

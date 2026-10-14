@@ -1,21 +1,24 @@
-# Programaciones didácticas individuales de IPE I e IPE II
+# Programaciones didácticas de IPE I e IPE II
 # IES Ciudad de Hércules · Chiclana de la Frontera
 #
-# Cada entrada de `programaciones` genera un PDF propio. Todas comparten el mismo
-# índice (`apartados`) y cada apartado se busca en estas carpetas, en este orden;
-# entra en la PD el PRIMERO que exista:
+# Cada entrada de `programaciones` es UN documento (un PDF) para todos sus grupos.
+# Todas comparten el índice (`apartados`). Cada apartado o fragmento se busca en
+# estas carpetas, en este orden, y entra el PRIMERO que exista:
 #
-#   grupos/<grupo>/<apartado>.md          solo este grupo
-#   modulos/<módulo>/<ciclo>/<apartado>.md  este módulo en este ciclo
-#   modulos/<módulo>/<apartado>.md         este módulo, en cualquier ciclo
-#   ciclos/<ciclo>/<apartado>.md           cualquier módulo de este ciclo
-#   comun/<apartado>.md                    todas las programaciones
+#   pd/<programación>/<nombre>.md   solo esta programación
+#   modulos/<módulo>/<nombre>.md    este módulo (IPE I se comparte entre GM y GS)
+#   ciclos/<ciclo>/<nombre>.md      cualquier programación de este ciclo
+#   comun/<nombre>.md               todas
 #
-# Para que un grupo tenga algo distinto basta con copiar el archivo a su carpeta
-# de grupos/ y cambiarlo. Dentro de cualquier archivo:
-#   <!-- incluir: <fragmento> -->   inserta otro archivo, buscado con la misma cascada
-#   {{grupo}}, {{curso}}, {{ciclo}}, {{modulo}}, {{codigo}}, {{horas}}...  datos del manifiesto
-schema_version: 1
+# Lo de cada grupo vive en grupos/<curso><ciclo>-<letra>/ (p. ej. grupos/1ga-a/)
+# y se inserta una vez por grupo con <!-- por-grupo: <fragmento> -->.
+#
+# Dentro de cualquier archivo:
+#   <!-- incluir: <fragmento> -->    inserta otro archivo, buscado con la misma cascada
+#   <!-- por-grupo: <fragmento> -->  inserta grupos/<grupo>/<fragmento>.md de cada grupo
+#   {{ciclo}}, {{modulo}}, {{codigo}}, {{horas}}, {{grupos}}…  datos de este manifiesto
+#   {{grupo}}, {{letra}}             dentro de un fragmento de grupo, los de ese grupo
+schema_version: 2
 
 documento:
   centro: "IES Ciudad de Hércules"
@@ -24,7 +27,7 @@ documento:
   departamento: "Departamento de Administración"
   docente: "Laura González Kåmerow"
   curso_academico: "2026/2027"
-  version: "borrador-01"
+  version: "borrador-02"
 
 apartados:
   - introduccion
@@ -57,52 +60,33 @@ ciclos:
     titulo: "Técnico en Gestión Administrativa"
     corto: "CFGM Gestión Administrativa"
     grado: "Grado medio"
+    nivel: "GM"
   af:
     titulo: "Técnico Superior en Administración y Finanzas"
     corto: "CFGS Administración y Finanzas"
     grado: "Grado superior"
+    nivel: "GS"
 
 programaciones:
-  - grupo: 1ga-a
+  - id: ipe1-gm
     modulo: ipe1
     ciclo: ga
     curso: 1
-    letra: "A"
     horas: 96
     horas_semana: 3
-  - grupo: 1ga-b
-    modulo: ipe1
-    ciclo: ga
-    curso: 1
-    letra: "B"
-    horas: 96
-    horas_semana: 3
-  - grupo: 1af-a
+    grupos: ["A", "B"]
+  - id: ipe1-gs
     modulo: ipe1
     ciclo: af
     curso: 1
-    letra: "A"
     horas: 96
     horas_semana: 3
-  - grupo: 1af-b
-    modulo: ipe1
-    ciclo: af
-    curso: 1
-    letra: "B"
-    horas: 96
-    horas_semana: 3
+    grupos: ["A", "B"]
   # Horas de IPE II: tomadas de la PD 2025/26 del centro (2.º GM). Confirmar para 2.º GS.
-  - grupo: 2af-a
+  - id: ipe2-gs
     modulo: ipe2
     ciclo: af
     curso: 2
-    letra: "A"
     horas: 105
     horas_semana: null   # por confirmar
-  - grupo: 2af-b
-    modulo: ipe2
-    ciclo: af
-    curso: 2
-    letra: "B"
-    horas: 105
-    horas_semana: null   # por confirmar
+    grupos: ["A", "B"]
