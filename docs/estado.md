@@ -8,9 +8,9 @@ Se genera solo con cada cambio: no lo edites a mano.
 
 | Programación | PDF | Por completar | Revisar |
 |---|---|:---:|:---:|
-| IPE I · 1.º CFGM Gestión Administrativa (grupos A y B) | [PD-IPE-I-GM.pdf](../programaciones/PD-IPE-I-GM.pdf) | 8 | ✓ |
-| IPE I · 1.º CFGS Administración y Finanzas (grupos A y B) | [PD-IPE-I-GS.pdf](../programaciones/PD-IPE-I-GS.pdf) | 8 | ✓ |
-| IPE II · 2.º CFGS Administración y Finanzas (grupos A y B) | [PD-IPE-II-GS.pdf](../programaciones/PD-IPE-II-GS.pdf) | 131 | [8](#ipe2-gs) |
+| IPE I · 1.º CFGM Gestión Administrativa (grupos A y B) | [PD-IPE-I-GM.pdf](../programaciones/PD-IPE-I-GM.pdf) | 6 | ✓ |
+| IPE I · 1.º CFGS Administración y Finanzas (grupos A y B) | [PD-IPE-I-GS.pdf](../programaciones/PD-IPE-I-GS.pdf) | 7 | ✓ |
+| IPE II · 2.º CFGS Administración y Finanzas (grupos A y B) | [PD-IPE-II-GS.pdf](../programaciones/PD-IPE-II-GS.pdf) | 130 | [8](#ipe2-gs) |
 
 ## Piezas
 
@@ -27,6 +27,7 @@ Se escribe una vez y vale para las tres PD.
 | [comun/contexto.md](../comun/contexto.md) | ✓ | IPE-I-GM, IPE-I-GS, IPE-II-GS |
 | [comun/criterios-departamento.md](../comun/criterios-departamento.md) | ✓ | IPE-I-GM, IPE-I-GS, IPE-II-GS |
 | [comun/diversidad.md](../comun/diversidad.md) | ✓ | IPE-I-GM, IPE-I-GS, IPE-II-GS |
+| [comun/entorno-empresarial.md](../comun/entorno-empresarial.md) | ✓ | IPE-I-GM, IPE-I-GS, IPE-II-GS |
 | [comun/evaluacion.md](../comun/evaluacion.md) | 1 | IPE-II-GS |
 | [comun/introduccion.md](../comun/introduccion.md) | ✓ | IPE-I-GM, IPE-I-GS, IPE-II-GS |
 | [comun/metodologia.md](../comun/metodologia.md) | 2 | IPE-II-GS |
@@ -50,7 +51,6 @@ RA, criterios, UD y evaluación. IPE I es el mismo en grado medio y superior.
 | [modulos/ipe1/ponderacion.md](../modulos/ipe1/ponderacion.md) | ✓ | IPE-I-GM, IPE-I-GS |
 | [modulos/ipe1/presentacion.md](../modulos/ipe1/presentacion.md) | ✓ | IPE-I-GM, IPE-I-GS |
 | [modulos/ipe1/resultados.md](../modulos/ipe1/resultados.md) | ✓ | IPE-I-GM, IPE-I-GS |
-| [modulos/ipe1/seguimiento-curso.md](../modulos/ipe1/seguimiento-curso.md) | 1 | IPE-I-GM, IPE-I-GS |
 | [modulos/ipe2/contenidos.md](../modulos/ipe2/contenidos.md) | 3 | IPE-II-GS |
 | [modulos/ipe2/faltas.md](../modulos/ipe2/faltas.md) | ✓ | IPE-II-GS |
 | [modulos/ipe2/instrumentos.md](../modulos/ipe2/instrumentos.md) | 2 | IPE-II-GS |
@@ -60,7 +60,6 @@ RA, criterios, UD y evaluación. IPE I es el mismo en grado medio y superior.
 | [modulos/ipe2/presentacion.md](../modulos/ipe2/presentacion.md) | 1 | IPE-II-GS |
 | [modulos/ipe2/recursos.md](../modulos/ipe2/recursos.md) | 2 | IPE-II-GS |
 | [modulos/ipe2/resultados.md](../modulos/ipe2/resultados.md) | 70 | IPE-II-GS |
-| [modulos/ipe2/seguimiento-curso.md](../modulos/ipe2/seguimiento-curso.md) | 4 | IPE-II-GS |
 
 ### Por ciclo
 
@@ -68,10 +67,10 @@ Lo que depende del título: normativa, competencia general y perfil profesional.
 
 | Archivo | Por completar | Entra en |
 |---|:---:|---|
-| [ciclos/af/entorno-profesional.md](../ciclos/af/entorno-profesional.md) | 1 | IPE-I-GS, IPE-II-GS |
+| [ciclos/af/entorno-profesional.md](../ciclos/af/entorno-profesional.md) | ✓ | IPE-I-GS, IPE-II-GS |
 | [ciclos/af/identificacion.md](../ciclos/af/identificacion.md) | ✓ | IPE-I-GS, IPE-II-GS |
 | [ciclos/af/normativa-titulo.md](../ciclos/af/normativa-titulo.md) | ✓ | IPE-I-GS, IPE-II-GS |
-| [ciclos/ga/entorno-profesional.md](../ciclos/ga/entorno-profesional.md) | 1 | IPE-I-GM |
+| [ciclos/ga/entorno-profesional.md](../ciclos/ga/entorno-profesional.md) | ✓ | IPE-I-GM |
 | [ciclos/ga/identificacion.md](../ciclos/ga/identificacion.md) | ✓ | IPE-I-GM |
 | [ciclos/ga/normativa-titulo.md](../ciclos/ga/normativa-titulo.md) | ✓ | IPE-I-GM |
 
@@ -86,17 +85,20 @@ Lo propio de cada PD: contribución al título, nivel, interdisciplinariedad, du
 | [pd/ipe1-gm/contribucion.md](../pd/ipe1-gm/contribucion.md) | ✓ | IPE-I-GM |
 | [pd/ipe1-gm/interdisciplinariedad.md](../pd/ipe1-gm/interdisciplinariedad.md) | ✓ | IPE-I-GM |
 | [pd/ipe1-gm/metodologia-nivel.md](../pd/ipe1-gm/metodologia-nivel.md) | ✓ | IPE-I-GM |
+| [pd/ipe1-gm/seguimiento-curso.md](../pd/ipe1-gm/seguimiento-curso.md) | ✓ | IPE-I-GM |
 | [pd/ipe1-gs/actividades.md](../pd/ipe1-gs/actividades.md) | ✓ | IPE-I-GS |
 | [pd/ipe1-gs/aula.md](../pd/ipe1-gs/aula.md) | ✓ | IPE-I-GS |
 | [pd/ipe1-gs/contribucion.md](../pd/ipe1-gs/contribucion.md) | ✓ | IPE-I-GS |
 | [pd/ipe1-gs/interdisciplinariedad.md](../pd/ipe1-gs/interdisciplinariedad.md) | ✓ | IPE-I-GS |
 | [pd/ipe1-gs/metodologia-nivel.md](../pd/ipe1-gs/metodologia-nivel.md) | ✓ | IPE-I-GS |
+| [pd/ipe1-gs/seguimiento-curso.md](../pd/ipe1-gs/seguimiento-curso.md) | 1 | IPE-I-GS |
 | [pd/ipe2-gs/actividades.md](../pd/ipe2-gs/actividades.md) | 3 | IPE-II-GS |
 | [pd/ipe2-gs/aula.md](../pd/ipe2-gs/aula.md) | 3 | IPE-II-GS |
 | [pd/ipe2-gs/contribucion.md](../pd/ipe2-gs/contribucion.md) | 2 | IPE-II-GS |
 | [pd/ipe2-gs/interdisciplinariedad.md](../pd/ipe2-gs/interdisciplinariedad.md) | 3 | IPE-II-GS |
 | [pd/ipe2-gs/metodologia-nivel.md](../pd/ipe2-gs/metodologia-nivel.md) | 1 | IPE-II-GS |
 | [pd/ipe2-gs/plan-formativo.md](../pd/ipe2-gs/plan-formativo.md) | 17 | IPE-II-GS |
+| [pd/ipe2-gs/seguimiento-curso.md](../pd/ipe2-gs/seguimiento-curso.md) | 4 | IPE-II-GS |
 
 ### Por grupo
 

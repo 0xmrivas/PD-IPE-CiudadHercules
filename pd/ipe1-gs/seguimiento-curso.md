@@ -1,6 +1,6 @@
 ### Seguimiento común del curso
 
-<!-- Por módulo: el calendario de primero es el mismo en grado medio y superior. Fechas de la PD de IPE I 2026/2027 de Laura; las que faltan, de jefatura de estudios. -->
+<!-- Por programación. Fechas de la PD de IPE I 2026/2027 de Laura; las que faltan, de jefatura de estudios. -->
 
 | Actuación | Fecha o periodo |
 |---|---|

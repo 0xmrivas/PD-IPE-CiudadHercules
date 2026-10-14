@@ -68,7 +68,7 @@ del módulo; IPE II usa de momento los borradores comunes.
 | Pieza | Gestión Administrativa | Administración y Finanzas | Finalizado |
 |---|---|---|---|
 | 1.1 Normativa del título | [normativa-titulo](ciclos/ga/normativa-titulo.md) | [normativa-titulo](ciclos/af/normativa-titulo.md) | [X] [X] |
-| 2.3 Entorno profesional (ocupaciones, convenio; faltan empresas) | [entorno-profesional](ciclos/ga/entorno-profesional.md) | [entorno-profesional](ciclos/af/entorno-profesional.md) | [ ] [ ] |
+| 2.3 Entorno profesional (ocupaciones; el tejido empresarial común está en [comun/entorno-empresarial.md](comun/entorno-empresarial.md)) | [entorno-profesional](ciclos/ga/entorno-profesional.md) | [entorno-profesional](ciclos/af/entorno-profesional.md) | [X] [X] |
 | 3.1 Competencia general del título | [identificacion](ciclos/ga/identificacion.md) | [identificacion](ciclos/af/identificacion.md) | [X] [X] |
 
 ### Por programación

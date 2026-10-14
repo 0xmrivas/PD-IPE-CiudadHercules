@@ -1,0 +1,12 @@
+<!-- Común. Redactado a partir de: Diario Bahía de Cádiz (Novo Sancti Petri, 30 aniversario; licencia del hotel Amare Sancti Petri; ocupación hotelera 2023; centro de empresas del CEEI en Chiclana; Emsisa), estatutos de Emsisa, prensa sobre Navantia y Airbus en la Bahía, y BOP de Cádiz n.º 211 de 5/11/2025 (convenio de oficinas y despachos 2025-2028). Las cifras de empleo hotelero son anteriores a la pandemia. -->
+
+El alumnado encontrará empleo, sobre todo, en estos ámbitos de Chiclana y de la Bahía de Cádiz:
+
+- **Pequeña y mediana empresa y personas autónomas.** Son la base del tejido empresarial de Chiclana: comercio, servicios, construcción y actividades vinculadas al turismo, que necesitan apoyo administrativo, contable, laboral y de atención al cliente, en plantilla o a través de una asesoría.
+- **Asesorías, gestorías y despachos profesionales.** Llevan la gestión laboral, fiscal y contable de esas pymes y son uno de los destinos más directos del título; se rigen por el convenio de oficinas y despachos de la provincia.
+- **Turismo y hostelería.** La zona hotelera de Novo Sancti Petri reúne unas 13.000 plazas, la mayor concentración de la provincia de Cádiz, y antes de la pandemia daba empleo directo a entre 5.000 y 6.000 personas en temporada alta. Cadenas como Iberostar, Hipotels o Grupo Fuerte tienen allí establecimientos con departamentos de administración, recepción, reservas, compras y recursos humanos.
+- **Administraciones públicas.** El Ayuntamiento de Chiclana y sus empresas municipales (Emsisa y Chiclana Natural), además de la Diputación, la Junta de Andalucía y la Universidad de Cádiz en la Bahía, ofrecen empleo público por oposición o mediante bolsas de trabajo.
+- **Industria de la Bahía.** Las empresas naval y aeronáutica (Navantia, Airbus) y su red de empresas auxiliares, en San Fernando, Puerto Real y Cádiz, demandan perfiles administrativos de compras, logística, facturación y personal.
+- **Emprendimiento.** El centro de empresas del CEEI Bahía de Cádiz en Chiclana y la Asociación de Empresarios de Chiclana apoyan a quien quiera trabajar por cuenta propia.
+
+**Convenio colectivo de referencia:** Convenio colectivo provincial de oficinas y despachos de Cádiz para 2025-2028, firmado el 11 de julio de 2025 y publicado en el BOP de Cádiz n.º 211, de 5 de noviembre de 2025. Es el convenio con el que se trabajan las condiciones laborales, el salario y la nómina en el bloque de relaciones laborales.
