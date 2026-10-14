@@ -1,0 +1,61 @@
+name: Generar las programaciones
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'programaciones/**'
+      - 'docs/estado.md'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: generar-pd
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      SOURCE_DATE_EPOCH: "0"   # PDF reproducibles: solo se publica el que cambia
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalar dependencias
+        run: python -m pip install -r requirements.txt
+
+      - name: Validar
+        run: |
+          python scripts/build.py
+          python -m unittest discover -s tests
+
+      - name: Instalar Pandoc y Typst
+        run: |
+          curl -sL "https://github.com/jgm/pandoc/releases/download/3.11/pandoc-3.11-1-amd64.deb" -o pandoc.deb
+          sudo dpkg -i pandoc.deb && rm pandoc.deb
+          curl -sL "https://github.com/typst/typst/releases/download/v0.15.1/typst-x86_64-unknown-linux-musl.tar.xz" | tar -xJ
+          sudo mv typst-x86_64-unknown-linux-musl/typst /usr/local/bin/typst
+          pandoc --version | head -1 && typst --version
+
+      - name: Generar los PDF
+        run: scripts/build-pdf.sh
+
+      - name: Publicar los PDF y el estado
+        run: |
+          rm -rf programaciones && cp -R dist programaciones
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A programaciones docs/estado.md
+          if git diff --cached --quiet; then
+            echo "Los PDF y el estado no han cambiado."
+          else
+            git commit -m "Actualizar PDF y estado [skip ci]"
+            git push origin HEAD:main
+          fi
