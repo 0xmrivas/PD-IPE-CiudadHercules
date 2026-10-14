@@ -30,6 +30,7 @@ STATUS_FILE = ROOT / "docs" / "estado.md"
 SCHEMA_VERSION = 2
 
 INCLUDE = re.compile(r"^[ \t]*<!--\s*incluir:\s*([a-z0-9][a-z0-9-]*)\s*-->[ \t]*$", re.MULTILINE)
+GROUP_TABLE = re.compile(r"^[ \t]*<!--\s*tabla-grupos:\s*([a-z0-9][a-z0-9-]*)\s*-->[ \t]*$", re.MULTILINE)
 PER_GROUP = re.compile(r"^[ \t]*<!--\s*por-grupo:\s*([a-z0-9][a-z0-9-]*)\s*-->[ \t]*$", re.MULTILINE)
 VARIABLE = re.compile(r"\{\{\s*([a-z_]+)\s*\}\}")
 COMMENT = re.compile(r"<!--.*?-->", re.DOTALL)
@@ -187,7 +188,33 @@ def expand(prog: Programacion, text: str, chain: tuple[str, ...], variables: dic
             parts.append(expand(prog, path.read_text(encoding="utf-8").strip(), chain + (name,), group["variables"]))
         return "\n\n".join(parts)
 
-    text = PER_GROUP.sub(per_group, INCLUDE.sub(include, text))
+    def group_table(match: re.Match) -> str:
+        """Une la tabla «Dato | Valor» de cada grupo en una sola, con una columna por grupo."""
+        name = match.group(1)
+        labels: list[str] = []
+        values: list[dict[str, str]] = []
+        for group in prog.groups:
+            path = group["carpeta"] / f"{name}.md"
+            rows: dict[str, str] = {}
+            if path.is_file():
+                prog.used.add(path)
+                text = substitute(prog, COMMENT.sub("", path.read_text(encoding="utf-8")), group["variables"])
+                for line in text.splitlines():
+                    cells = [c.strip() for c in line.strip().strip("|").split("|")] if line.lstrip().startswith("|") else []
+                    if len(cells) >= 2 and cells[0] not in ("Dato", "") and not re.fullmatch(r"[-: ]+", cells[0]):
+                        rows[cells[0]] = cells[1]
+                        if cells[0] not in labels:
+                            labels.append(cells[0])
+            else:
+                prog.warnings.append(f"falta {path.relative_to(ROOT)}")
+            values.append(rows)
+        header = "| Dato | " + " | ".join(f"Grupo {g['letra']}" for g in prog.groups) + " |"
+        lines = [header, "|---|" + "---|" * len(prog.groups)]
+        for label in labels:
+            lines.append(f"| {label} | " + " | ".join(v.get(label, "—") for v in values) + " |")
+        return "\n".join(lines)
+
+    text = PER_GROUP.sub(per_group, GROUP_TABLE.sub(group_table, INCLUDE.sub(include, text)))
     return substitute(prog, text, variables)
 
 

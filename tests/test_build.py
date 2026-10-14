@@ -30,10 +30,8 @@ class BuildTest(unittest.TestCase):
     def test_portada_y_contextualizacion_de_cada_grupo(self):
         gm = self.read("PD-IPE-I-GM")
         self.assertIn("cover-groups: Grupos A y B", gm)
-        self.assertIn("### Grupo A", gm)
-        self.assertIn("### Grupo B", gm)
-        self.assertLess(gm.index("### Grupo A"), gm.index("### Grupo B"))
-        self.assertIn("| N.º de alumnado | 25 |", gm)
+        self.assertIn("| Dato | Grupo A | Grupo B |", gm)
+        self.assertIn("| N.º de alumnado | 25 | 26 |", gm)
         self.assertIn("Blue Zone Forum", gm)
         self.assertNotIn("Blue Zone Forum", self.read("PD-IPE-I-GS"))
 

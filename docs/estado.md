@@ -8,9 +8,9 @@ Se genera solo con cada cambio: no lo edites a mano.
 
 | Programación | PDF | Por completar | Revisar |
 |---|---|:---:|:---:|
-| IPE I · 1.º CFGM Gestión Administrativa (grupos A y B) | [PD-IPE-I-GM.pdf](../programaciones/PD-IPE-I-GM.pdf) | 7 | ✓ |
-| IPE I · 1.º CFGS Administración y Finanzas (grupos A y B) | [PD-IPE-I-GS.pdf](../programaciones/PD-IPE-I-GS.pdf) | 7 | ✓ |
-| IPE II · 2.º CFGS Administración y Finanzas (grupos A y B) | [PD-IPE-II-GS.pdf](../programaciones/PD-IPE-II-GS.pdf) | 125 | [8](#ipe2-gs) |
+| IPE I · 1.º CFGM Gestión Administrativa (grupos A y B) | [PD-IPE-I-GM.pdf](../programaciones/PD-IPE-I-GM.pdf) | 10 | ✓ |
+| IPE I · 1.º CFGS Administración y Finanzas (grupos A y B) | [PD-IPE-I-GS.pdf](../programaciones/PD-IPE-I-GS.pdf) | 10 | ✓ |
+| IPE II · 2.º CFGS Administración y Finanzas (grupos A y B) | [PD-IPE-II-GS.pdf](../programaciones/PD-IPE-II-GS.pdf) | 133 | [8](#ipe2-gs) |
 
 ## Piezas
 
@@ -50,6 +50,7 @@ RA, criterios, UD y evaluación. IPE I es el mismo en grado medio y superior.
 | [modulos/ipe1/ponderacion.md](../modulos/ipe1/ponderacion.md) | ✓ | IPE-I-GM, IPE-I-GS |
 | [modulos/ipe1/presentacion.md](../modulos/ipe1/presentacion.md) | ✓ | IPE-I-GM, IPE-I-GS |
 | [modulos/ipe1/resultados.md](../modulos/ipe1/resultados.md) | ✓ | IPE-I-GM, IPE-I-GS |
+| [modulos/ipe1/seguimiento-curso.md](../modulos/ipe1/seguimiento-curso.md) | 1 | IPE-I-GM, IPE-I-GS |
 | [modulos/ipe2/contenidos.md](../modulos/ipe2/contenidos.md) | 3 | IPE-II-GS |
 | [modulos/ipe2/faltas.md](../modulos/ipe2/faltas.md) | ✓ | IPE-II-GS |
 | [modulos/ipe2/instrumentos.md](../modulos/ipe2/instrumentos.md) | 2 | IPE-II-GS |
@@ -59,6 +60,7 @@ RA, criterios, UD y evaluación. IPE I es el mismo en grado medio y superior.
 | [modulos/ipe2/presentacion.md](../modulos/ipe2/presentacion.md) | 1 | IPE-II-GS |
 | [modulos/ipe2/recursos.md](../modulos/ipe2/recursos.md) | 2 | IPE-II-GS |
 | [modulos/ipe2/resultados.md](../modulos/ipe2/resultados.md) | 70 | IPE-II-GS |
+| [modulos/ipe2/seguimiento-curso.md](../modulos/ipe2/seguimiento-curso.md) | 4 | IPE-II-GS |
 
 ### Por ciclo
 
@@ -102,17 +104,17 @@ La contextualización y la diversidad de cada grupo.
 
 | Archivo | Por completar | Entra en |
 |---|:---:|---|
-| [grupos/1af-a/contextualizacion.md](../grupos/1af-a/contextualizacion.md) | 1 | IPE-I-GS |
+| [grupos/1af-a/datos.md](../grupos/1af-a/datos.md) | 2 | IPE-I-GS |
 | [grupos/1af-a/diversidad-grupo.md](../grupos/1af-a/diversidad-grupo.md) | 1 | IPE-I-GS |
-| [grupos/1af-b/contextualizacion.md](../grupos/1af-b/contextualizacion.md) | 1 | IPE-I-GS |
+| [grupos/1af-b/datos.md](../grupos/1af-b/datos.md) | 2 | IPE-I-GS |
 | [grupos/1af-b/diversidad-grupo.md](../grupos/1af-b/diversidad-grupo.md) | 1 | IPE-I-GS |
-| [grupos/1ga-a/contextualizacion.md](../grupos/1ga-a/contextualizacion.md) | 1 | IPE-I-GM |
+| [grupos/1ga-a/datos.md](../grupos/1ga-a/datos.md) | 2 | IPE-I-GM |
 | [grupos/1ga-a/diversidad-grupo.md](../grupos/1ga-a/diversidad-grupo.md) | 1 | IPE-I-GM |
-| [grupos/1ga-b/contextualizacion.md](../grupos/1ga-b/contextualizacion.md) | 1 | IPE-I-GM |
+| [grupos/1ga-b/datos.md](../grupos/1ga-b/datos.md) | 2 | IPE-I-GM |
 | [grupos/1ga-b/diversidad-grupo.md](../grupos/1ga-b/diversidad-grupo.md) | 1 | IPE-I-GM |
-| [grupos/2af-a/contextualizacion.md](../grupos/2af-a/contextualizacion.md) | 3 | IPE-II-GS |
+| [grupos/2af-a/datos.md](../grupos/2af-a/datos.md) | 5 | IPE-II-GS |
 | [grupos/2af-a/diversidad-grupo.md](../grupos/2af-a/diversidad-grupo.md) | 1 | IPE-II-GS |
-| [grupos/2af-b/contextualizacion.md](../grupos/2af-b/contextualizacion.md) | 3 | IPE-II-GS |
+| [grupos/2af-b/datos.md](../grupos/2af-b/datos.md) | 5 | IPE-II-GS |
 | [grupos/2af-b/diversidad-grupo.md](../grupos/2af-b/diversidad-grupo.md) | 1 | IPE-II-GS |
 
 ## Qué revisar

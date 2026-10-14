@@ -18,6 +18,10 @@ El centro (código {{codigo_centro}}) imparte ESO, Bachillerato, Formación Prof
 
 <!-- incluir: aula -->
 
-<!-- por-grupo: contextualizacion -->
+### Datos de los grupos
+
+<!-- tabla-grupos: datos -->
+
+<!-- incluir: seguimiento-curso -->
 
 <!-- incluir: aula-cierre -->

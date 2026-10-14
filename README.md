@@ -84,14 +84,14 @@ del módulo; IPE II usa de momento los borradores comunes.
 
 ### Por grupo
 
-| Grupo | Contextualización | Diversidad | Finalizado |
+| Grupo | Datos del grupo | Diversidad | Finalizado |
 |---|---|---|---|
-| 1.º GA A (25) | [contextualizacion](grupos/1ga-a/contextualizacion.md) | [diversidad-grupo](grupos/1ga-a/diversidad-grupo.md) | [ ] falta NEAE |
-| 1.º GA B (26) | [contextualizacion](grupos/1ga-b/contextualizacion.md) | [diversidad-grupo](grupos/1ga-b/diversidad-grupo.md) | [ ] falta NEAE |
-| 1.º AyF A (15) | [contextualizacion](grupos/1af-a/contextualizacion.md) | [diversidad-grupo](grupos/1af-a/diversidad-grupo.md) | [ ] falta NEAE |
-| 1.º AyF B (15) | [contextualizacion](grupos/1af-b/contextualizacion.md) | [diversidad-grupo](grupos/1af-b/diversidad-grupo.md) | [ ] falta NEAE |
-| 2.º AyF A | [contextualizacion](grupos/2af-a/contextualizacion.md) | [diversidad-grupo](grupos/2af-a/diversidad-grupo.md) | [ ] |
-| 2.º AyF B | [contextualizacion](grupos/2af-b/contextualizacion.md) | [diversidad-grupo](grupos/2af-b/diversidad-grupo.md) | [ ] |
+| 1.º GA A (25) | [datos](grupos/1ga-a/datos.md) | [diversidad-grupo](grupos/1ga-a/diversidad-grupo.md) | [ ] falta NEAE |
+| 1.º GA B (26) | [datos](grupos/1ga-b/datos.md) | [diversidad-grupo](grupos/1ga-b/diversidad-grupo.md) | [ ] falta NEAE |
+| 1.º AyF A (15) | [datos](grupos/1af-a/datos.md) | [diversidad-grupo](grupos/1af-a/diversidad-grupo.md) | [ ] falta NEAE |
+| 1.º AyF B (15) | [datos](grupos/1af-b/datos.md) | [diversidad-grupo](grupos/1af-b/diversidad-grupo.md) | [ ] falta NEAE |
+| 2.º AyF A | [datos](grupos/2af-a/datos.md) | [diversidad-grupo](grupos/2af-a/diversidad-grupo.md) | [ ] |
+| 2.º AyF B | [datos](grupos/2af-b/datos.md) | [diversidad-grupo](grupos/2af-b/diversidad-grupo.md) | [ ] |
 
 ---
 
@@ -109,6 +109,8 @@ Dentro de cualquier archivo:
 
 - `<!-- incluir: fragmento -->` inserta `fragmento.md`, buscado con la misma cascada.
 - `<!-- por-grupo: fragmento -->` inserta `grupos/<grupo>/fragmento.md` de cada grupo de la PD.
+- `<!-- tabla-grupos: fragmento -->` une la tabla «Dato | Valor» de `grupos/<grupo>/fragmento.md`
+  de cada grupo en una sola tabla, con una columna por grupo (así salen los datos de los grupos).
 - `{{ciclo}}`, `{{modulo}}`, `{{codigo}}`, `{{horas}}`, `{{grupos}}`… se sustituyen por
   los datos de `manifest.yml`; dentro de un fragmento de grupo, `{{grupo}}` y
   `{{letra}}` son los de ese grupo.
