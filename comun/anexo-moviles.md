@@ -8,7 +8,3 @@ Por ello, en el módulo de {{modulo_corto}}:
 
 1. Se permitirá el uso de dispositivos electrónicos con conexión a internet para acceder a las plataformas educativas (Moodle Centros, Google Classroom, Microsoft 365 Education o similares), especialmente en las sesiones que se desarrollan en aulas sin ordenadores.
 2. Se permitirá la consulta puntual de contenidos relacionados con el módulo y la participación en actividades de gamificación, siempre bajo indicación expresa de la profesora.
-
-Chiclana de la Frontera, a [día] de noviembre de 2026.
-
-Fdo.: {{docente}}

@@ -39,7 +39,7 @@ que la usan. Marca con `[X]` cuando una pieza esté terminada.
 | 9 Atención a la diversidad (medidas generales) | [comun/diversidad.md](comun/diversidad.md) | [X] |
 | 10 Seguimiento de la programación | [comun/seguimiento.md](comun/seguimiento.md) | [X] |
 | 13 Plan lector | [comun/plan-lector.md](comun/plan-lector.md) | [X] |
-| 14 Anexo de dispositivos móviles (falta la fecha de firma) | [comun/anexo-moviles.md](comun/anexo-moviles.md) | [ ] |
+| 14 Anexo de dispositivos móviles | [comun/anexo-moviles.md](comun/anexo-moviles.md) | [X] |
 | 6 y 7 Metodología y evaluación de IPE II (borrador del Alberti) | [comun/metodologia.md](comun/metodologia.md) · [comun/evaluacion.md](comun/evaluacion.md) | [ ] |
 
 ### Por módulo

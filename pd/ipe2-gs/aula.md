@@ -1,7 +1,9 @@
 ## Aula
 
-<!-- Por programación. Mismo esquema que en IPE I: grupos y número de alumnado, rasgos comunes del curso y lo que distingue a cada grupo. -->
+<!-- Por programación. Rasgos comunes del curso; lo de cada grupo está en grupos/<grupo>/aula-grupo.md. -->
 
-El módulo se imparte a dos grupos de segundo curso, con tres sesiones semanales de una hora en cada uno. Tras las convalidaciones y las nuevas incorporaciones de inicio de curso, los grupos han quedado así: **2.º CFGS A, [número] alumnos/as; y 2.º CFGS B, [número] alumnos/as.**
+El módulo se imparte a dos grupos de segundo curso, con tres sesiones semanales de una hora en cada uno. A continuación se describen los rasgos comunes del curso y, después, los de cada grupo tras las convalidaciones y las nuevas incorporaciones de inicio de curso.
 
-[Procedencia, experiencia laboral, intereses, dominio de los contenidos y actitud del alumnado de segundo; qué distingue al grupo A del grupo B].
+**Grado Superior (2.º CFGS A y B).** [Procedencia, experiencia laboral, intereses, dominio de los contenidos y actitud comunes al alumnado de segundo].
+
+<!-- por-grupo: aula-grupo -->

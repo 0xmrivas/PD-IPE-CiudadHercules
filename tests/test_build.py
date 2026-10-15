@@ -33,7 +33,8 @@ class BuildTest(unittest.TestCase):
         self.assertIn("| Dato | Grupo A | Grupo B |", gm)
         self.assertIn("| N.º de alumnado | 25 | 26 |", gm)
         self.assertIn("| Turno | Mañana | Mañana |", gm)
-        self.assertIn("el grupo B es más individual", gm)
+        self.assertIn("El grupo A cuenta con 25 alumnos y alumnas", gm)
+        self.assertIn("El grupo B cuenta con 26 alumnos y alumnas", gm)
         self.assertIn("Blue Zone Forum", gm)
         self.assertNotIn("Blue Zone Forum", self.read("PD-IPE-I-GS"))
 

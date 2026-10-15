@@ -1,4 +1,4 @@
-<!-- Por grupo. Los rasgos de cada grupo se describen en el texto del aula (pd/<programación>/aula.md). Una fila por dato; la PD une las tablas de todos los grupos en una sola, con una columna por grupo. Sin datos personales del alumnado. -->
+<!-- Por grupo. Los rasgos de cada grupo se describen en aula-grupo.md. Una fila por dato; la PD une las tablas de todos los grupos en una sola, con una columna por grupo. Sin datos personales del alumnado. -->
 
 | Dato | Valor |
 |---|---|
