@@ -8,9 +8,9 @@ Se genera solo con cada cambio: no lo edites a mano.
 
 | Programación | PDF | Por completar | Revisar |
 |---|---|:---:|:---:|
-| IPE I · 1.º CFGM Gestión Administrativa (grupos A y B) | [PD-IPE-I-GM.pdf](../programaciones/PD-IPE-I-GM.pdf) | 6 | ✓ |
-| IPE I · 1.º CFGS Administración y Finanzas (grupos A y B) | [PD-IPE-I-GS.pdf](../programaciones/PD-IPE-I-GS.pdf) | 7 | ✓ |
-| IPE II · 2.º CFGS Administración y Finanzas (grupos A y B) | [PD-IPE-II-GS.pdf](../programaciones/PD-IPE-II-GS.pdf) | 131 | [8](#ipe2-gs) |
+| IPE I · 1.º CFGM Gestión Administrativa (grupos A y B) | [PD-IPE-I-GM.pdf](../programaciones/PD-IPE-I-GM.pdf) | 5 | ✓ |
+| IPE I · 1.º CFGS Administración y Finanzas (grupos A y B) | [PD-IPE-I-GS.pdf](../programaciones/PD-IPE-I-GS.pdf) | 6 | ✓ |
+| IPE II · 2.º CFGS Administración y Finanzas (grupos A y B) | [PD-IPE-II-GS.pdf](../programaciones/PD-IPE-II-GS.pdf) | 130 | [8](#ipe2-gs) |
 
 ## Piezas
 
@@ -22,7 +22,7 @@ Se escribe una vez y vale para las tres PD.
 
 | Archivo | Por completar | Entra en |
 |---|:---:|---|
-| [comun/anexo-moviles.md](../comun/anexo-moviles.md) | 1 | IPE-I-GM, IPE-I-GS, IPE-II-GS |
+| [comun/anexo-moviles.md](../comun/anexo-moviles.md) | ✓ | IPE-I-GM, IPE-I-GS, IPE-II-GS |
 | [comun/aula-cierre.md](../comun/aula-cierre.md) | ✓ | IPE-I-GM, IPE-I-GS, IPE-II-GS |
 | [comun/contexto.md](../comun/contexto.md) | ✓ | IPE-I-GM, IPE-I-GS, IPE-II-GS |
 | [comun/criterios-departamento.md](../comun/criterios-departamento.md) | ✓ | IPE-I-GM, IPE-I-GS, IPE-II-GS |
@@ -93,7 +93,7 @@ Lo propio de cada PD: contribución al título, nivel, interdisciplinariedad, du
 | [pd/ipe1-gs/metodologia-nivel.md](../pd/ipe1-gs/metodologia-nivel.md) | ✓ | IPE-I-GS |
 | [pd/ipe1-gs/seguimiento-curso.md](../pd/ipe1-gs/seguimiento-curso.md) | 1 | IPE-I-GS |
 | [pd/ipe2-gs/actividades.md](../pd/ipe2-gs/actividades.md) | 3 | IPE-II-GS |
-| [pd/ipe2-gs/aula.md](../pd/ipe2-gs/aula.md) | 3 | IPE-II-GS |
+| [pd/ipe2-gs/aula.md](../pd/ipe2-gs/aula.md) | 1 | IPE-II-GS |
 | [pd/ipe2-gs/contribucion.md](../pd/ipe2-gs/contribucion.md) | 2 | IPE-II-GS |
 | [pd/ipe2-gs/interdisciplinariedad.md](../pd/ipe2-gs/interdisciplinariedad.md) | 3 | IPE-II-GS |
 | [pd/ipe2-gs/metodologia-nivel.md](../pd/ipe2-gs/metodologia-nivel.md) | 1 | IPE-II-GS |
@@ -106,16 +106,22 @@ La contextualización y la diversidad de cada grupo.
 
 | Archivo | Por completar | Entra en |
 |---|:---:|---|
+| [grupos/1af-a/aula-grupo.md](../grupos/1af-a/aula-grupo.md) | ✓ | IPE-I-GS |
 | [grupos/1af-a/datos.md](../grupos/1af-a/datos.md) | 1 | IPE-I-GS |
 | [grupos/1af-a/diversidad-grupo.md](../grupos/1af-a/diversidad-grupo.md) | 1 | IPE-I-GS |
+| [grupos/1af-b/aula-grupo.md](../grupos/1af-b/aula-grupo.md) | ✓ | IPE-I-GS |
 | [grupos/1af-b/datos.md](../grupos/1af-b/datos.md) | 1 | IPE-I-GS |
 | [grupos/1af-b/diversidad-grupo.md](../grupos/1af-b/diversidad-grupo.md) | 1 | IPE-I-GS |
+| [grupos/1ga-a/aula-grupo.md](../grupos/1ga-a/aula-grupo.md) | ✓ | IPE-I-GM |
 | [grupos/1ga-a/datos.md](../grupos/1ga-a/datos.md) | 1 | IPE-I-GM |
 | [grupos/1ga-a/diversidad-grupo.md](../grupos/1ga-a/diversidad-grupo.md) | 1 | IPE-I-GM |
+| [grupos/1ga-b/aula-grupo.md](../grupos/1ga-b/aula-grupo.md) | ✓ | IPE-I-GM |
 | [grupos/1ga-b/datos.md](../grupos/1ga-b/datos.md) | 1 | IPE-I-GM |
 | [grupos/1ga-b/diversidad-grupo.md](../grupos/1ga-b/diversidad-grupo.md) | 1 | IPE-I-GM |
+| [grupos/2af-a/aula-grupo.md](../grupos/2af-a/aula-grupo.md) | 1 | IPE-II-GS |
 | [grupos/2af-a/datos.md](../grupos/2af-a/datos.md) | 3 | IPE-II-GS |
 | [grupos/2af-a/diversidad-grupo.md](../grupos/2af-a/diversidad-grupo.md) | 1 | IPE-II-GS |
+| [grupos/2af-b/aula-grupo.md](../grupos/2af-b/aula-grupo.md) | 1 | IPE-II-GS |
 | [grupos/2af-b/datos.md](../grupos/2af-b/datos.md) | 3 | IPE-II-GS |
 | [grupos/2af-b/diversidad-grupo.md](../grupos/2af-b/diversidad-grupo.md) | 1 | IPE-II-GS |
 
