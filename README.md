@@ -140,3 +140,4 @@ Los PDF quedan en `dist/`; en GitHub, la action los publica en `programaciones/`
 
 El motor (validación, tablas generadas, filtros de maquetación) procede del
 repositorio de la PD del Departamento de Informática del IES Rafael Alberti.
+
