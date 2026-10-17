@@ -74,3 +74,4 @@ Esta programación se ajusta, además, al Plan de Centro del {{centro}}: Proyect
 | Formación en empresa | Orden de 28 de septiembre de 2011 | Orden de 26 de septiembre de 2025 |
 | FOL y EIE | Módulos de cada título | IPE I e IPE II (RD 499/2024 y RD 500/2024) |
 | Programaciones didácticas | Redacción original del artículo 29 del Decreto 327/2010 | Decreto 483/2026, de 31 de agosto |
+
