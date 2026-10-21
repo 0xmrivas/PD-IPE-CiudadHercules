@@ -8,7 +8,7 @@ Se genera solo con cada cambio: no lo edites a mano.
 
 | Programación | PDF | Por completar | Revisar |
 |---|---|:---:|:---:|
-| IPE I · 1.º CFGM Gestión Administrativa y CFGS Administración y Finanzas (grupos GM A, GM B, GS A y GS B) | [PD-IPE-I.pdf](../programaciones/PD-IPE-I.pdf) | 1 | [1](#ipe1) |
+| IPE I · 1.º CFGM Gestión Administrativa y 1.º CFGS Administración y Finanzas (grupos GM A, GM B, GS A y GS B) | [PD-IPE-I.pdf](../programaciones/PD-IPE-I.pdf) | 1 | [1](#ipe1) |
 | IPE II · 2.º CFGS Administración y Finanzas (grupos A y B) | [PD-IPE-II-GS.pdf](../programaciones/PD-IPE-II-GS.pdf) | 130 | [8](#ipe2-gs) |
 
 ## Piezas

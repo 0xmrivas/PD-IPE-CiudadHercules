@@ -65,6 +65,7 @@ class Programacion:
     pending: int = 0
     issues: list[str] = field(default_factory=list)
     header_cycle: str = ""
+    course_cycle: str = ""
 
     @property
     def id(self) -> str:
@@ -162,12 +163,14 @@ def make_programacion(manifest: dict[str, Any], entry: dict[str, Any]) -> Progra
             "titulo_ciclo": letters([c["datos"]["titulo"] for c in cycles]),
             "grado": letters([c["datos"]["grado"].lower() for c in cycles]).capitalize(),
             "grupos": f"{plural} {letters(labels)}",
-            "grupo": f"{course} {letters(names)} ({plural} {letters(labels)})",
+            # El curso delante de cada ciclo: «1.º CFGM … y 1.º CFGS …», no «1.º CFGM … y CFGS …»
+            "grupo": f"{letters([f'{course} {n}' for n in names])} ({plural} {letters(labels)})",
         }
-        header_cycle = letters([n.split()[0] for n in names])
+        course_cycle = letters([f"{course} {n}" for n in names])
+        header_cycle = letters([f"{course} {n.split()[0]}" for n in names])
     else:
         general = cycles[0]["variables"]
-        header_cycle = cycles[0]["datos"]["corto"]
+        course_cycle = header_cycle = f"{course} {cycles[0]['datos']['corto']}"
     variables = {
         "centro": doc["centro"],
         "codigo_centro": str(doc.get("codigo_centro", "")),
@@ -206,7 +209,8 @@ def make_programacion(manifest: dict[str, Any], entry: dict[str, Any]) -> Progra
     layers = cycles[0]["layers"]
     if multi:
         layers = [(kind, folder) for kind, folder in layers if kind != "ciclo" and folder != pd_dir / ids[0]]
-    return Programacion(entry, module, cycles, variables, layers, groups, header_cycle=header_cycle)
+    return Programacion(entry, module, cycles, variables, layers, groups,
+                        header_cycle=header_cycle, course_cycle=course_cycle)
 
 
 def resolve(prog: Programacion, name: str, layers: list[tuple[str, Path]] | None = None) -> Path | None:
@@ -373,7 +377,7 @@ def front_matter(manifest: dict[str, Any], prog: Programacion) -> dict[str, Any]
         "lang": "es",
         "cover-title": "Programación Didáctica",
         "cover-subtitle": v["modulo"],
-        "cover-detail": f"Módulo {v['codigo']} · {v['curso']} {v['ciclo']}",
+        "cover-detail": f"Módulo {v['codigo']} · {prog.course_cycle}",
         "cover-groups": groups,
         "teacher": doc["docente"],
         "department": doc["departamento"],
@@ -381,7 +385,7 @@ def front_matter(manifest: dict[str, Any], prog: Programacion) -> dict[str, Any]
         "city": doc.get("localidad", ""),
         "academic-year": doc["curso_academico"],
         "version": str(doc["version"]),
-        "header-title": f"{v['modulo_corto']} · {v['curso']} {prog.header_cycle} · {groups}",
+        "header-title": f"{v['modulo_corto']} · {prog.header_cycle} · {groups}",
         "module-level": 0,
     }
 
