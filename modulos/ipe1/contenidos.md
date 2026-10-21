@@ -18,11 +18,11 @@ Bloques: **1** Introductorio (sector profesional) · **2** Seguridad y salud lab
 | UD6 | La relación laboral | 3 | 9 | RA3 | RA3.a, RA3.c | 1.ª–2.ª ev. · 14/12/2026–22/01/2027 |
 | UD7 | El contrato de trabajo | 3 | 11 | RA3 | RA3.b, RA3.g | 2.ª ev. · 25/01–19/02/2027 |
 | UD8 | Salario y Seguridad Social | 3 | 10 | RA3 | RA3.d, RA3.e, RA3.f | 2.ª ev. · 22/02–12/03/2027 |
-| FFEOE | Fase de formación en empresa u organismo equiparado | — | 15 | RA4, RA5 | RA4.a, RA4.e, RA4.h, RA5.a, RA5.h | 2.ª–3.ª ev. · 15/03–23/04/2027 |
-| UD9 | El proyecto profesional | 4 | 5 | RA4 | RA4.b, RA4.c, RA4.d, RA4.f, RA4.g, RA4.i, RA4.j, RA4.k | 3.ª ev. · 26/04–07/05/2027 |
-| UD10 | Aprendizaje autónomo y la competencia digital | 4 | 8 | RA5 | RA5.b, RA5.c, RA5.d, RA5.e, RA5.f, RA5.g, RA5.i | 3.ª ev. · 10/05–21/05/2027 |
+| FFEOE | Fase de formación en empresa u organismo equiparado | — | 18 | RA1 | RA1.a, RA1.b, RA1.c | 2.ª–3.ª ev. · 15/03–23/04/2027 |
+| UD9 | El proyecto profesional | 4 | 5 | RA4 | RA4.a, RA4.b, RA4.c, RA4.d, RA4.e, RA4.f, RA4.g, RA4.h, RA4.i, RA4.j, RA4.k | 3.ª ev. · 26/04–07/05/2027 |
+| UD10 | Aprendizaje autónomo y la competencia digital | 4 | 8 | RA5 | RA5.a, RA5.b, RA5.c, RA5.d, RA5.e, RA5.f, RA5.g, RA5.h, RA5.i | 3.ª ev. · 10/05–21/05/2027 |
 
-Son 81 horas en el centro y 15 horas vinculadas a la FFEOE, 96 en total.
+Son 78 horas en el centro y 18 horas vinculadas a la FFEOE, 96 en total.
 
 Distribución por trimestres: la **1.ª evaluación** recoge la UD 1 y el bloque completo de prevención (UD 2 a UD 5, 38 horas) y el inicio de la UD 6; la **2.ª evaluación**, el bloque laboral (UD 6 a UD 8); el periodo de formación en empresa se sitúa entre el final de la 2.ª evaluación y el inicio de la 3.ª; y la **3.ª evaluación** recoge el bloque de orientación profesional (UD 9 y UD 10), que se cursa ya de vuelta de la empresa. Las semanas lectivas restantes hasta junio se destinan a refuerzo, recuperación de los RA no superados y mejora de calificación.
 
@@ -96,7 +96,7 @@ Esta distribución tiene un carácter flexible y dinámico: dependerá del nivel
 - El entorno personal de aprendizaje (EPA/PLE): herramientas, fuentes, conexiones y actividades.
 - El plan de desarrollo individual.
 
-Durante la **FFEOE** se trabajan en la empresa los criterios RA4 a), e) y h) y RA5 a) y h), que se introducen previamente en el aula (véase el apartado «Plan de formación en empresa»).
+Durante la **FFEOE** se completan en la empresa los criterios RA1 a), b) y c), que se introducen previamente en el aula en la UD 1 (véase el apartado «Plan de formación en empresa»).
 
 ## Elementos transversales: educación en valores
 

@@ -1,6 +1,6 @@
 # Evaluación
 
-<!-- Común a las tres PD. Los criterios del Departamento de Administración mandan sobre cualquier otra regla de cálculo. Cada módulo aporta su ponderación, sus instrumentos y su tabla de faltas (modulos/<módulo>/). -->
+<!-- Común a todas las PD. Los criterios del Departamento de Administración mandan sobre cualquier otra regla de cálculo. Cada módulo aporta su ponderación, sus instrumentos y su tabla de faltas (modulos/<módulo>/). -->
 
 ## Carácter de la evaluación
 

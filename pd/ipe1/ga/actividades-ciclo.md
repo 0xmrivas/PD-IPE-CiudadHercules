@@ -1,0 +1,1 @@
+- **Asistencia al Blue Zone Forum** (Cádiz, octubre de 2026) con el alumnado de 1º CFGM A y B: foro sobre economía azul y sostenibilidad que permite conocer de primera mano oportunidades de empleo y empresas de la zona, vinculado al RA 1 (UD 1, oportunidades de empleo en el sector) y a la educación en valores ambientales.

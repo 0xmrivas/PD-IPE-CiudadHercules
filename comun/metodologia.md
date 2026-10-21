@@ -1,6 +1,6 @@
 # Metodología
 
-<!-- Común a las tres PD. Adaptado de la parte general del Departamento de Informática del IES Rafael Alberti: revisar que refleja la práctica real en el aula. Lo que cambia entre grado medio y superior va en pd/<programación>/metodologia-nivel.md. -->
+<!-- Común a todas las PD. Adaptado de la parte general del Departamento de Informática del IES Rafael Alberti: revisar que refleja la práctica real en el aula. Lo que cambia entre grado medio y superior va en pd/<programación>/metodologia-nivel.md. -->
 
 ## Principios metodológicos
 

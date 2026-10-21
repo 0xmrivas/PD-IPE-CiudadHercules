@@ -8,7 +8,7 @@ Al igual que el resto de programaciones de cada módulo profesional, esta progra
 
 ## Referencia normativa
 
-<!-- Común a las tres PD. La normativa del título está en ciclos/<ciclo>/normativa-titulo.md. Fuentes: marco legal de la parte general de la PD del Departamento de Informática del IES Rafael Alberti (versión del 3 de octubre de 2026) y PD de IPE I e IPE II del IES Ciudad de Hércules (2025/2026). -->
+<!-- Común a todas las PD. La normativa del título está en ciclos/<ciclo>/normativa-titulo.md (una vez por ciclo). Fuentes: marco legal de la parte general de la PD del Departamento de Informática del IES Rafael Alberti (versión del 3 de octubre de 2026) y PD de IPE I e IPE II del IES Ciudad de Hércules (2025/2026). -->
 
 ### Leyes orgánicas y autonómicas
 
@@ -52,13 +52,15 @@ Al igual que el resto de programaciones de cada módulo profesional, esta progra
 
 **Real Decreto Legislativo 1/2013, de 29 de noviembre** (BOE 289, de 3 de diciembre), por el que se aprueba el Texto Refundido de la Ley General de derechos de las personas con discapacidad y de su inclusión social.
 
+**Instrucciones de 8 de marzo de 2017**, de la Dirección General de Participación y Equidad, por las que se actualiza el protocolo de detección, identificación del alumnado con necesidades específicas de apoyo educativo y organización de la respuesta educativa.
+
 ### Plan lector y uso de dispositivos móviles
 
 **Instrucciones de 21 de junio de 2023**, de la Viceconsejería de Desarrollo Educativo y Formación Profesional, sobre el tratamiento de la lectura para el despliegue de la competencia en comunicación lingüística.
 
 **Instrucción de 4 de diciembre de 2023**, de la Viceconsejería de Desarrollo Educativo y Formación Profesional, sobre determinados aspectos para la regulación del uso de los teléfonos móviles en los centros educativos dependientes de la Consejería de Desarrollo Educativo y Formación Profesional.
 
-<!-- incluir: normativa-titulo -->
+<!-- por-ciclo: normativa-titulo -->
 
 ### Normativa del centro
 
@@ -74,4 +76,3 @@ Esta programación se ajusta, además, al Plan de Centro del {{centro}}: Proyect
 | Formación en empresa | Orden de 28 de septiembre de 2011 | Orden de 26 de septiembre de 2025 |
 | FOL y EIE | Módulos de cada título | IPE I e IPE II (RD 499/2024 y RD 500/2024) |
 | Programaciones didácticas | Redacción original del artículo 29 del Decreto 327/2010 | Decreto 483/2026, de 31 de agosto |
-

@@ -1,8 +1,4 @@
-# Interdisciplinariedad
-
-<!-- Por programación. Ampliado a partir de la PD de IPE I 2026/2027 de Laura, con el formato de tabla de las PD del Departamento de Informática. Revisar con el equipo educativo las fechas y lo que se coordina. -->
-
-Cada módulo forma parte de un todo, por lo que se potenciará la coordinación con el profesorado del ciclo. IPE I aporta al resto de módulos el marco laboral y preventivo en el que se desarrolla la gestión administrativa y, a su vez, se apoya en ellos para que los casos prácticos tengan sentido en el sector. Las actuaciones previstas se acordarán en las reuniones del equipo educativo de inicio de curso y se revisarán en las sesiones de evaluación.
+<!-- Por ciclo: módulos del título de Administración y Finanzas con los que se coordina IPE I. -->
 
 | Módulo relacionado | Contenido, actividad o proyecto compartido | Actuación de coordinación y momento previsto |
 |---|---|---|
@@ -10,6 +6,4 @@ Cada módulo forma parte de un todo, por lo que se potenciará la coordinación 
 | 0648 Recursos humanos y responsabilidad social corporativa | Selección y formación del personal, igualdad en la empresa, conciliación y prevención como parte de la responsabilidad social | Se cursa en el mismo curso: se coordinan en el segundo trimestre los casos de igualdad, conciliación y acoso laboral (UD6) y, en el tercero, los procesos de selección desde los dos puntos de vista: el de quien busca empleo (UD9) y el de la empresa |
 | 0651 Comunicación y atención al cliente | Comunicación oral y escrita, habilidades sociales y entrevista de trabajo | Se cursa en el mismo curso: se coordinan en el tercer trimestre las exposiciones orales del proyecto profesional (UD9) para que se valoren también desde la comunicación |
 | 0649 Ofimática y proceso de la información | Elaboración de documentos (currículum, informe de evaluación de riesgos, cálculo de nóminas en hoja de cálculo) y competencia digital; riesgos del trabajo con pantallas | Se cursa en el mismo curso: la UD3 (noviembre) trata el trabajo con pantallas de visualización de datos; tras la UD8 (marzo) se propone calcular una nómina en hoja de cálculo, y en mayo el entorno personal de aprendizaje (UD10) se construye con las herramientas de este módulo |
-| Formación en empresa (FFEOE) | Prevención de riesgos laborales, derechos y deberes de la persona trabajadora y criterios RA4 y RA5 que se completan en la empresa | Se coordina con la tutoría de FFEOE: el Bloque 2 (prevención) se termina antes de la incorporación del alumnado a la empresa, y la experiencia vivida se retoma en las UD9 y UD10 (véase el plan de formación en empresa) |
 | 0652 Gestión de recursos humanos | Contrato de trabajo, nómina, Seguridad Social y convenio colectivo, que en segundo se gestionan desde el departamento de personal | Se cursa en otro curso: se informa al profesorado de segundo, al cierre del curso, del nivel alcanzado en contratación y nóminas (UD7 y UD8) |
-| 1710 Itinerario personal para la empleabilidad II | Búsqueda de empleo, competencias personales y sociales y emprendimiento, a partir del proyecto profesional y del entorno personal de aprendizaje de IPE I | Se cursa en otro curso: el portfolio del proyecto profesional (UD9 y UD10) se conserva para que el alumnado lo continúe en IPE II |

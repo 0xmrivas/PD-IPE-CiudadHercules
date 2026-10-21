@@ -1,5 +1,5 @@
 ### Grupo {{letra}}
 
-<!-- Por grupo. Texto inventado de partida para que Laura lo adapte: número de alumnado y rasgos propios del grupo (procedencia, experiencia, actitud, ritmo). Sin datos personales. -->
+<!-- Por grupo. Rasgos del grupo según la evaluación inicial de octubre de 2026. Sin datos personales. -->
 
-El grupo B cuenta con 15 alumnos y alumnas. Reúne más personas adultas, algunas con estudios universitarios y varios años de experiencia laboral, y varias incorporaciones recientes. Parte de un nivel algo más alto, se muestra autónomo y seguro en el trabajo individual y tiene un interés claro por el emprendimiento. Su participación en clase es todavía escasa y le cuesta el trabajo en equipo con compañeros y compañeras de perfiles distintos. Se aprovechará su experiencia profesional en debates y estudios de caso, y se plantearán actividades de ampliación para quienes avanzan con más rapidez.
+El grupo {{letra}} cuenta con 15 alumnos y alumnas. Es heterogéneo, con edades dispares y parte del alumnado con experiencia laboral; está motivado, muestra interés por el sector profesional y participa bien. El ritmo de trabajo es más ágil y la organización del aula, más sencilla. Solo una de sus tres sesiones semanales es en aula taller; en las otras dos el aula no tiene ordenadores fijos, por lo que las actividades con equipos se concentran en esa sesión o se apoyan en los carritos de portátiles del centro. Se aprovechará su experiencia laboral en debates y estudios de caso, y se plantearán actividades de ampliación.

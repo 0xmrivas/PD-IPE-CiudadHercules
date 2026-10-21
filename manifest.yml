@@ -6,9 +6,14 @@
 # estas carpetas, en este orden, y entra el PRIMERO que exista:
 #
 #   pd/<programación>/<nombre>.md   solo esta programación
-#   modulos/<módulo>/<nombre>.md    este módulo (IPE I se comparte entre GM y GS)
+#   modulos/<módulo>/<nombre>.md    este módulo
 #   ciclos/<ciclo>/<nombre>.md      cualquier programación de este ciclo
 #   comun/<nombre>.md               todas
+#
+# Una programación puede abarcar varios ciclos (`ciclos: [ga, af]`): IPE I es
+# una sola PD para los grupos de GM y de GS. Lo que depende del título se inserta
+# una vez por ciclo con <!-- por-ciclo: <fragmento> [titulo=N] -->, buscado en
+# pd/<programación>/<ciclo>/ → pd/<programación>/ → modulos/ → ciclos/<ciclo>/ → comun/.
 #
 # Lo de cada grupo vive en grupos/<curso><ciclo>-<letra>/ (p. ej. grupos/1ga-a/)
 # y se inserta una vez por grupo con <!-- por-grupo: <fragmento> -->.
@@ -16,6 +21,7 @@
 # Dentro de cualquier archivo:
 #   <!-- incluir: <fragmento> -->    inserta otro archivo, buscado con la misma cascada
 #   <!-- por-grupo: <fragmento> -->  inserta grupos/<grupo>/<fragmento>.md de cada grupo
+#   <!-- por-ciclo: <fragmento> -->  inserta el fragmento de cada ciclo de la programación
 #   {{ciclo}}, {{modulo}}, {{codigo}}, {{horas}}, {{grupos}}…  datos de este manifiesto
 #   {{grupo}}, {{letra}}             dentro de un fragmento de grupo, los de ese grupo
 schema_version: 2
@@ -38,7 +44,7 @@ versiones:
     accion: "Redactado"
     fecha: "13/10/2026"
     version: "1.0"
-    programaciones: [ipe1-gm, ipe1-gs]
+    programaciones: [ipe1]
   - responsables: ["González Kämerow, Laura"]
     accion: "Redactado"
     fecha: "[Fecha]"
@@ -84,21 +90,15 @@ ciclos:
     nivel: "GS"
 
 programaciones:
-  - id: ipe1-gm
+  # IPE I: una PD para los cuatro grupos de primero (GM A y B, GS A y B)
+  - id: ipe1
     modulo: ipe1
-    ciclo: ga
+    ciclos: [ga, af]
     curso: 1
     horas: 96
     horas_semana: 3
-    grupos: ["A", "B"]
-  - id: ipe1-gs
-    modulo: ipe1
-    ciclo: af
-    curso: 1
-    horas: 96
-    horas_semana: 3
-    ects: 5
-    grupos: ["A", "B"]
+    ects: {af: 5}
+    grupos: ["A", "B"]        # en cada ciclo
   # La Resolución de 24 de julio de 2026 elimina la cifra de 105 h: se mantienen las 3 h semanales.
   - id: ipe2-gs
     modulo: ipe2

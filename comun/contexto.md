@@ -1,6 +1,6 @@
 # Análisis del contexto
 
-<!-- Común a las tres PD. De la PD de IPE I 2026/2027 de Laura. -->
+<!-- Común a todas las PD. De la PD de IPE I 2026/2027 de Laura. -->
 
 El fin último de la Formación Profesional es la incorporación del alumnado a la vida laboral. Esto obliga a estar en contacto con las empresas de la zona y a conocer el entorno socioeconómico y las características educativas y sociales del alumnado. Las personas tituladas ejercerán su actividad en grandes, medianas y pequeñas empresas de cualquier sector, así como en las Administraciones Públicas, prestando apoyo en las tareas de administración y gestión y atendiendo a clientes y ciudadanía.
 
@@ -14,7 +14,11 @@ Según el Proyecto Educativo, el instituto se sitúa en una barriada urbana de p
 
 El centro (código {{codigo_centro}}) imparte ESO, Bachillerato, Formación Profesional Básica de Servicios Administrativos, Curso de Acceso a ciclos de Grado Medio, el C.F.G.M. de Gestión Administrativa y el C.F.G.S. de Administración y Finanzas, con unos 1.000 alumnos y alumnas cada curso. Es centro TIC y participa, entre otros, en los planes de Bilingüismo, Transformación Digital Educativa, Igualdad (Coeducación) y Escuela: Espacio de Paz. El alumnado y el profesorado utilizan las plataformas Moodle Centros y Google Classroom.
 
-<!-- incluir: entorno-profesional -->
+## Entorno profesional
+
+<!-- incluir: entorno-empresarial -->
+
+<!-- por-ciclo: entorno-profesional titulo=3 -->
 
 <!-- incluir: aula -->
 

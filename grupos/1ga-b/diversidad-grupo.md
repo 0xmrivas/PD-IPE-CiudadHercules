@@ -1,5 +1,5 @@
 ### Grupo {{letra}}
 
-<!-- Por grupo. Medidas concretas para el alumnado de este grupo, sin nombres ni diagnósticos. Si no hay medidas específicas, indicarlo. -->
+<!-- Por grupo. Medidas acordadas a partir de la evaluación inicial; las de NEAE, con el Departamento de Orientación. Sin datos personales. -->
 
-[Medidas específicas de atención a la diversidad en el grupo {{grupo}}].
+No hay alumnado con necesidad específica de apoyo educativo. Se aplican las medidas generales y, como los niveles de partida son dispares, actividades con distintos grados de dificultad, de refuerzo y de ampliación. La experiencia laboral de parte del grupo se aprovecha en la tutoría entre iguales dentro de los equipos, y las exposiciones orales y el trabajo cooperativo se introducen de forma progresiva.

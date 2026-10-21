@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # Genera un PDF por programación con Pandoc + Typst:
 #
-#   dist/PD-IPE-I-GM.pdf, dist/PD-IPE-I-GS.pdf, dist/PD-IPE-II-GS.pdf
+#   dist/PD-IPE-I.pdf (GM y GS), dist/PD-IPE-II-GS.pdf
 #
 # Uso: scripts/build-pdf.sh            todas
-#      scripts/build-pdf.sh ipe1-gm    solo esa programación
+#      scripts/build-pdf.sh ipe1       solo esa programación
 #
 # Requisitos: Python 3 con PyYAML, Pandoc >= 3.11 y Typst >= 0.14.
 set -euo pipefail
