@@ -8,7 +8,7 @@ Se genera solo con cada cambio: no lo edites a mano.
 
 | Programación | PDF | Por completar | Revisar |
 |---|---|:---:|:---:|
-| IPE I · 1.º CFGM Gestión Administrativa y 1.º CFGS Administración y Finanzas (grupos GM A, GM B, GS A y GS B) | [PD-IPE-I.pdf](../programaciones/PD-IPE-I.pdf) | 1 | ✓ |
+| IPE I · 1.º CFGM Gestión Administrativa y 1.º CFGS Administración y Finanzas (grupos GM A, GM B, GS A y GS B) | [PD-IPE-I.pdf](../programaciones/PD-IPE-I.pdf) | ✓ | ✓ |
 | IPE II · 2.º CFGS Administración y Finanzas (grupos A y B) | [PD-IPE-II-GS.pdf](../programaciones/PD-IPE-II-GS.pdf) | 130 | [8](#ipe2-gs) |
 
 ## Piezas
@@ -92,7 +92,7 @@ Lo propio de cada PD: contribución al título, nivel, interdisciplinariedad, du
 | [pd/ipe1/ga/interdisciplinariedad-ciclo.md](../pd/ipe1/ga/interdisciplinariedad-ciclo.md) | ✓ | IPE-I |
 | [pd/ipe1/interdisciplinariedad.md](../pd/ipe1/interdisciplinariedad.md) | ✓ | IPE-I |
 | [pd/ipe1/metodologia-nivel.md](../pd/ipe1/metodologia-nivel.md) | ✓ | IPE-I |
-| [pd/ipe1/seguimiento-curso.md](../pd/ipe1/seguimiento-curso.md) | 1 | IPE-I |
+| [pd/ipe1/seguimiento-curso.md](../pd/ipe1/seguimiento-curso.md) | ✓ | IPE-I |
 | [pd/ipe2-gs/actividades.md](../pd/ipe2-gs/actividades.md) | 3 | IPE-II-GS |
 | [pd/ipe2-gs/aula.md](../pd/ipe2-gs/aula.md) | 1 | IPE-II-GS |
 | [pd/ipe2-gs/contribucion.md](../pd/ipe2-gs/contribucion.md) | 2 | IPE-II-GS |
