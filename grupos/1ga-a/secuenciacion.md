@@ -1,6 +1,6 @@
 #### Grupo {{letra}}
 
-<!-- Por grupo. Calendario común de las UD; la FFEOE lo interrumpe donde cae y, a la vuelta, se sigue donde se dejó. -->
+<!-- Por grupo. Calendario común de las UD; la FFEOE lo interrumpe donde cae y, a la vuelta, se sigue donde se dejó. Se genera con scripts/secuenciacion.py. -->
 
 Formación en empresa del 11/03 al 23/04/2027.
 
