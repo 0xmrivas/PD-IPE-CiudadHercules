@@ -4,38 +4,42 @@
 
 ## Bloques, unidades didácticas y temporalización
 
-Los contenidos básicos del módulo se organizan en cuatro bloques y diez unidades didácticas. La temporalización es **común para Grado Medio y Grado Superior** y está anclada al calendario escolar de la provincia de Cádiz para 2026/2027 (inicio de las clases de FP el 15 de septiembre; vacaciones de Navidad del 23 de diciembre al 8 de enero; Semana Santa del 22 al 28 de marzo; último día lectivo el 23 de junio).
+Los contenidos básicos del módulo se organizan en cuatro bloques y diez unidades didácticas. La temporalización de las unidades es **común para Grado Medio y Grado Superior**; solo cambia el punto en que la interrumpe el periodo de formación en empresa de cada grupo. Está anclada al calendario escolar de la provincia de Cádiz para 2026/2027 (inicio de las clases de FP el 15 de septiembre; vacaciones de Navidad del 23 de diciembre al 8 de enero; Semana Santa del 22 al 28 de marzo; último día lectivo el 23 de junio).
 
 Bloques: **1** Introductorio (sector profesional) · **2** Prevención de riesgos laborales · **3** Condiciones laborales · **4** Orientación profesional.
 
-| UD | Título | Bloque | Horas | RA | Criterios de evaluación | Periodo |
-|---|---|---|---|---|---|---|
-| UD1 | El sector profesional | 1 | 3 | RA1 | RA1.a, RA1.b, RA1.c | 1.ª ev. · 15/09–02/10/2026 |
-| UD2 | Seguridad y salud laboral | 2 | 9 | RA2 | RA2.a, RA2.b | 1.ª ev. · 05/10–23/10/2026 |
-| UD3 | Prevención de riesgos laborales | 2 | 10 | RA2 | RA2.c | 1.ª ev. · 26/10–20/11/2026 |
-| UD4 | Organización y gestión de la prevención | 2 | 7 | RA2 | RA2.e, RA2.f, RA2.h | 1.ª ev. · 23/11–04/12/2026 |
-| UD5 | Actuaciones en caso de emergencia | 2 | 6 | RA2 | RA2.d, RA2.g, RA2.i | 1.ª ev. · 09/12–11/12/2026 |
-| UD6 | La relación laboral | 3 | 9 | RA3 | RA3.a, RA3.c | 1.ª–2.ª ev. · 14/12/2026–22/01/2027 |
-| UD7 | El contrato de trabajo | 3 | 11 | RA3 | RA3.b, RA3.g | 2.ª ev. · 25/01–19/02/2027 |
-| UD8 | Salario y Seguridad Social | 3 | 11 | RA3 | RA3.d, RA3.e, RA3.f | 2.ª ev. · 22/02–12/03/2027 |
-| FFEOE | Fase de formación en empresa u organismo equiparado | — | 18 | RA1 | RA1.a, RA1.b, RA1.c | Según el grupo (véase «Plan de formación en empresa») |
-| UD9 | El proyecto profesional | 4 | 7 | RA4 | RA4.a, RA4.b, RA4.c, RA4.d, RA4.e, RA4.f, RA4.g, RA4.h, RA4.i, RA4.j, RA4.k | 3.ª ev. · 26/04–07/05/2027 |
-| UD10 | Aprendizaje autónomo y la competencia digital | 4 | 8 | RA5 | RA5.a, RA5.b, RA5.c, RA5.d, RA5.e, RA5.f, RA5.g, RA5.h, RA5.i | 3.ª ev. · 10/05–21/05/2027 |
+| UD | Título | Bloque | Horas | RA | Criterios de evaluación |
+|---|---|---|---|---|---|
+| UD1 | Presentación del módulo e introducción al sector profesional | 1 | 4 | RA1 | RA1.a, RA1.b, RA1.c |
+| UD2 | Seguridad y salud laboral | 2 | 9 | RA2 | RA2.a, RA2.b |
+| UD3 | Prevención de riesgos laborales | 2 | 10 | RA2 | RA2.c |
+| UD4 | Organización y gestión de la prevención | 2 | 6 | RA2 | RA2.e, RA2.f, RA2.h |
+| UD5 | Actuaciones en caso de emergencia | 2 | 5 | RA2 | RA2.d, RA2.g, RA2.i |
+| UD6 | La relación laboral | 3 | 9 | RA3 | RA3.a, RA3.c |
+| UD7 | El contrato de trabajo | 3 | 11 | RA3 | RA3.b, RA3.g |
+| UD8 | Salario y Seguridad Social | 3 | 11 | RA3 | RA3.d, RA3.e, RA3.f |
+| UD9 | El proyecto profesional | 4 | 6 | RA4 | RA4.a, RA4.b, RA4.c, RA4.d, RA4.e, RA4.f, RA4.g, RA4.h, RA4.i, RA4.j, RA4.k |
+| UD10 | Aprendizaje autónomo y la competencia digital | 4 | 7 | RA5 | RA5.a, RA5.b, RA5.c, RA5.d, RA5.e, RA5.f, RA5.g, RA5.h, RA5.i |
+| FFEOE | Fase de formación en empresa u organismo equiparado | — | 18 | RA1 | RA1.a, RA1.b, RA1.c |
 
 Son 78 horas en el centro y 18 horas vinculadas a la FFEOE, 96 en total.
 
-Distribución por trimestres: la **1.ª evaluación** recoge la UD 1 y el bloque completo de prevención de riesgos laborales (UD 2 a UD 5) y el inicio de la UD 6; la **2.ª evaluación**, el bloque laboral (UD 6 a UD 8); y la **3.ª evaluación**, el bloque de orientación profesional (UD 9 y UD 10). El periodo de formación en empresa es distinto en cada grupo: los grupos A van entre la 2.ª y la 3.ª evaluación y cursan el bloque de orientación a la vuelta; los grupos B van al final del curso y lo cursan antes de incorporarse a la empresa. Las semanas lectivas restantes en junio se destinan a refuerzo, recuperación de los RA no superados y mejora de calificación.
+Distribución por trimestres: la **1.ª evaluación** recoge la UD 1 y el bloque completo de prevención de riesgos laborales (UD 2 a UD 5) y el inicio de la UD 6; la **2.ª evaluación**, el bloque laboral (UD 6 a UD 8) y el inicio del bloque de orientación profesional (UD 9), que termina en la **3.ª evaluación** con la UD 10. El periodo de formación en empresa es distinto en cada grupo (los grupos A van entre la 2.ª y la 3.ª evaluación, y los grupos B, al final del curso): interrumpe la secuencia donde cae, entre dos unidades o en mitad de una, y a la vuelta se continúa donde se dejó. Las semanas lectivas restantes se destinan a refuerzo, recuperación de los RA no superados y mejora de calificación.
 
 Esta distribución tiene un carácter flexible y dinámico: dependerá del nivel de conocimientos y del ritmo de aprendizaje de cada grupo, así como de imprevistos (huelgas, bajas, actividades del centro, etc.), por lo que podrá ajustarse a lo largo del curso. El seguimiento real de cada grupo se registra sesión a sesión en el diario de clase de la profesora.
 
+### Secuenciación de cada grupo
+
+<!-- por-grupo: secuenciacion -->
+
 ## Contenidos de cada unidad didáctica
 
-### UD 1. El sector profesional (RA 1 · 3 h)
-- El sector profesional: concepto, sectores económicos, familias profesionales y áreas de futuro. Fuentes de información (INE, SEPE, TodoFP).
-- Identificación, ocupaciones y prospectiva del título (TodoFP y BOE).
-- Las competencias requeridas por el sector: competencia, actitud y aptitud; hard skills y soft skills; competencia general y competencias profesionales, personales y sociales del título.
-- Empleabilidad y entorno (PESTEL). Vías de acceso al empleo: por cuenta ajena, por cuenta propia y empleo público.
-- El empleo público y privado: tipos de personal empleado público, grupos de clasificación, sistemas de acceso y requisitos; ventajas e inconvenientes.
+### UD 1. Presentación del módulo e introducción al sector profesional (RA 1 · 4 h)
+- **Presentación del módulo** (1 h): resultados de aprendizaje, organización por bloques, evaluación y calificación, aula virtual en Moodle Centros y qué parte del módulo se trabaja en la empresa.
+- **Evaluación inicial** (1 h): cuestionario de conocimientos previos y de autopercepción de competencias.
+- **Introducción al sector productivo** (2 h): sectores económicos y familia profesional; ocupaciones del título y vías de acceso al empleo (por cuenta ajena, por cuenta propia y empleo público). Se presenta la guía de observación que el alumnado usará en la empresa y en el diario de prácticas.
+
+Los contenidos del RA 1 se desarrollan en la empresa, durante la FFEOE: competencias que pide el sector, empleabilidad y entorno (PESTEL), y empleo público y privado (tipos de personal, grupos de clasificación, sistemas de acceso y requisitos).
 
 ### UD 2. Seguridad y salud laboral (RA 2 · 9 h)
 - El trabajo y la salud: concepto de salud y sus dimensiones. La cultura preventiva.
@@ -49,14 +53,14 @@ Esta distribución tiene un carácter flexible y dinámico: dependerá del nivel
 - La evaluación de riesgos: concepto, fases y métodos.
 - Técnicas de prevención y de protección: medidas colectivas, equipos de protección individual y señalización de seguridad.
 
-### UD 4. Organización y gestión de la prevención (RA 2 · 7 h)
+### UD 4. Organización y gestión de la prevención (RA 2 · 6 h)
 - Marco normativo básico: la Ley de Prevención de Riesgos Laborales.
 - Derechos y deberes de la empresa y de las personas trabajadoras en materia preventiva.
 - Modalidades de organización de la prevención en la empresa. Organismos públicos relacionados con la prevención.
 - Representación de las personas trabajadoras: delegados y delegadas de prevención y comité de seguridad y salud.
 - La vigilancia de la salud.
 
-### UD 5. Actuaciones en caso de emergencia (RA 2 · 6 h)
+### UD 5. Actuaciones en caso de emergencia (RA 2 · 5 h)
 - El plan de prevención y el plan de autoprotección: medidas de emergencia y evacuación.
 - Protocolos de actuación en caso de emergencia: incendio, evacuación y otras emergencias.
 - Primeros auxilios: el método PAS, valoración de la persona accidentada y soporte vital básico.
@@ -81,7 +85,7 @@ Esta distribución tiene un carácter flexible y dinámico: dependerá del nivel
 - La Seguridad Social: estructura, regímenes y obligaciones de empresa y persona trabajadora. Principales prestaciones.
 - Recursos ante las vicisitudes de la relación laboral: reclamaciones, conciliación, demanda e Inspección de Trabajo.
 
-### UD 9. El proyecto profesional (RA 4 · 7 h)
+### UD 9. El proyecto profesional (RA 4 · 6 h)
 - El autoconocimiento: intereses, motivaciones, habilidades y destrezas. La autoestima en la búsqueda de empleo.
 - Cualidades y competencias personales y sociales con valor para el empleo en el perfil del título.
 - Hitos de la trayectoria vital con valor profesionalizador (incluida la experiencia en la empresa).
@@ -89,7 +93,7 @@ Esta distribución tiene un carácter flexible y dinámico: dependerá del nivel
 - Itinerarios formativos y profesionales relacionados con el perfil del título.
 - Objetivos y metas profesionales; el plan de acción.
 
-### UD 10. Aprendizaje autónomo y la competencia digital (RA 5 · 8 h)
+### UD 10. Aprendizaje autónomo y la competencia digital (RA 5 · 7 h)
 - El aprendizaje a lo largo de la vida y su valor profesionalizador. La empleabilidad como capacidad de adaptación.
 - La competencia digital para la empleabilidad.
 - La identidad digital y la huella digital: impacto en la empleabilidad.

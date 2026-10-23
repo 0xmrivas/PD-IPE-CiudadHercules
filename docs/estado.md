@@ -8,7 +8,7 @@ Se genera solo con cada cambio: no lo edites a mano.
 
 | Programación | PDF | Por completar | Revisar |
 |---|---|:---:|:---:|
-| IPE I · 1.º CFGM Gestión Administrativa y 1.º CFGS Administración y Finanzas (grupos GM A, GM B, GS A y GS B) | [PD-IPE-I.pdf](../programaciones/PD-IPE-I.pdf) | 1 | [1](#ipe1) |
+| IPE I · 1.º CFGM Gestión Administrativa y 1.º CFGS Administración y Finanzas (grupos GM A, GM B, GS A y GS B) | [PD-IPE-I.pdf](../programaciones/PD-IPE-I.pdf) | 1 | ✓ |
 | IPE II · 2.º CFGS Administración y Finanzas (grupos A y B) | [PD-IPE-II-GS.pdf](../programaciones/PD-IPE-II-GS.pdf) | 130 | [8](#ipe2-gs) |
 
 ## Piezas
@@ -110,15 +110,19 @@ La contextualización y la diversidad de cada grupo.
 | [grupos/1af-a/aula-grupo.md](../grupos/1af-a/aula-grupo.md) | ✓ | IPE-I |
 | [grupos/1af-a/datos.md](../grupos/1af-a/datos.md) | ✓ | IPE-I |
 | [grupos/1af-a/diversidad-grupo.md](../grupos/1af-a/diversidad-grupo.md) | ✓ | IPE-I |
+| [grupos/1af-a/secuenciacion.md](../grupos/1af-a/secuenciacion.md) | ✓ | IPE-I |
 | [grupos/1af-b/aula-grupo.md](../grupos/1af-b/aula-grupo.md) | ✓ | IPE-I |
 | [grupos/1af-b/datos.md](../grupos/1af-b/datos.md) | ✓ | IPE-I |
 | [grupos/1af-b/diversidad-grupo.md](../grupos/1af-b/diversidad-grupo.md) | ✓ | IPE-I |
+| [grupos/1af-b/secuenciacion.md](../grupos/1af-b/secuenciacion.md) | ✓ | IPE-I |
 | [grupos/1ga-a/aula-grupo.md](../grupos/1ga-a/aula-grupo.md) | ✓ | IPE-I |
 | [grupos/1ga-a/datos.md](../grupos/1ga-a/datos.md) | ✓ | IPE-I |
 | [grupos/1ga-a/diversidad-grupo.md](../grupos/1ga-a/diversidad-grupo.md) | ✓ | IPE-I |
+| [grupos/1ga-a/secuenciacion.md](../grupos/1ga-a/secuenciacion.md) | ✓ | IPE-I |
 | [grupos/1ga-b/aula-grupo.md](../grupos/1ga-b/aula-grupo.md) | ✓ | IPE-I |
 | [grupos/1ga-b/datos.md](../grupos/1ga-b/datos.md) | ✓ | IPE-I |
 | [grupos/1ga-b/diversidad-grupo.md](../grupos/1ga-b/diversidad-grupo.md) | ✓ | IPE-I |
+| [grupos/1ga-b/secuenciacion.md](../grupos/1ga-b/secuenciacion.md) | ✓ | IPE-I |
 | [grupos/2af-a/aula-grupo.md](../grupos/2af-a/aula-grupo.md) | 1 | IPE-II-GS |
 | [grupos/2af-a/datos.md](../grupos/2af-a/datos.md) | 3 | IPE-II-GS |
 | [grupos/2af-a/diversidad-grupo.md](../grupos/2af-a/diversidad-grupo.md) | 1 | IPE-II-GS |
@@ -127,12 +131,6 @@ La contextualización y la diversidad de cada grupo.
 | [grupos/2af-b/diversidad-grupo.md](../grupos/2af-b/diversidad-grupo.md) | 1 | IPE-II-GS |
 
 ## Qué revisar
-
-<a name="ipe1"></a>
-
-**PD-IPE-I**
-
-- Las unidades suman 99 h y la duración es de 96 h (78 h en el centro).
 
 <a name="ipe2-gs"></a>
 

@@ -80,6 +80,9 @@ def relation_table(text):
     if not result:
         result = [["[RA por asignar]", "[Criterios por asignar]", "[UD por asignar]",
                    "[Periodo por concretar]", "[Fase por concretar]"]]
+    # Sin columna «Periodo» en las UD (fechas por grupo), la relación tampoco la lleva
+    if units and "periodo" not in [name.lower() for name in units[0]]:
+        return md_table(["RA", "Criterios", "UD", "Fase"], [row[:3] + row[4:] for row in result])
     return md_table(["RA", "Criterios", "UD", "Periodo", "Fase"], result)
 
 
