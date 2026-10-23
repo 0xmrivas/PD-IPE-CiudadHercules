@@ -10,7 +10,7 @@ Bloques: **1** Introductorio (sector profesional) · **2** Prevención de riesgo
 
 | UD | Título | Bloque | Horas | RA | Criterios de evaluación |
 |---|---|---|---|---|---|
-| UD1 | Presentación del módulo e introducción al sector profesional | 1 | 4 | RA1 | RA1.a, RA1.b, RA1.c |
+| UD1 | Presentación del módulo e introducción al sector profesional | 1 | 4 | — | — |
 | UD2 | Seguridad y salud laboral | 2 | 9 | RA2 | RA2.a, RA2.b |
 | UD3 | Prevención de riesgos laborales | 2 | 10 | RA2 | RA2.c |
 | UD4 | Organización y gestión de la prevención | 2 | 6 | RA2 | RA2.e, RA2.f, RA2.h |
@@ -24,7 +24,7 @@ Bloques: **1** Introductorio (sector profesional) · **2** Prevención de riesgo
 
 Son 78 horas en el centro y 18 horas vinculadas a la FFEOE, 96 en total.
 
-Distribución por trimestres: la **1.ª evaluación** recoge la UD 1 y el bloque completo de prevención de riesgos laborales (UD 2 a UD 5) y el inicio de la UD 6; la **2.ª evaluación**, el bloque laboral (UD 6 a UD 8) y el inicio del bloque de orientación profesional (UD 9), que termina en la **3.ª evaluación** con la UD 10. El periodo de formación en empresa es distinto en cada grupo (los grupos A van entre la 2.ª y la 3.ª evaluación, y los grupos B, al final del curso): interrumpe la secuencia donde cae, entre dos unidades o en mitad de una, y a la vuelta se continúa donde se dejó. Las semanas lectivas restantes se destinan a refuerzo, recuperación de los RA no superados y mejora de calificación.
+Distribución por trimestres: la **1.ª evaluación** recoge la UD 1 y el bloque completo de prevención de riesgos laborales (UD 2 a UD 5) y el inicio de la UD 6; la **2.ª evaluación**, el bloque de condiciones laborales (UD 6 a UD 8) y el inicio del bloque de orientación profesional (UD 9), que termina en la **3.ª evaluación** con la UD 10. El periodo de formación en empresa es distinto en cada grupo (los grupos A van entre la 2.ª y la 3.ª evaluación, y los grupos B, al final del curso): interrumpe la secuencia donde cae, entre dos unidades o en mitad de una, y a la vuelta se continúa donde se dejó. Las semanas lectivas restantes se destinan a refuerzo, recuperación de los RA no superados y mejora de calificación.
 
 Esta distribución tiene un carácter flexible y dinámico: dependerá del nivel de conocimientos y del ritmo de aprendizaje de cada grupo, así como de imprevistos (huelgas, bajas, actividades del centro, etc.), por lo que podrá ajustarse a lo largo del curso. El seguimiento real de cada grupo se registra sesión a sesión en el diario de clase de la profesora.
 
@@ -34,7 +34,7 @@ Esta distribución tiene un carácter flexible y dinámico: dependerá del nivel
 
 ## Contenidos de cada unidad didáctica
 
-### UD 1. Presentación del módulo e introducción al sector profesional (RA 1 · 4 h)
+### UD 1. Presentación del módulo e introducción al sector profesional (4 h)
 - **Presentación del módulo** (1 h): resultados de aprendizaje, organización por bloques, evaluación y calificación, aula virtual en Moodle Centros y qué parte del módulo se trabaja en la empresa.
 - **Evaluación inicial** (1 h): cuestionario de conocimientos previos y de autopercepción de competencias.
 - **Introducción al sector productivo** (2 h): sectores económicos y familia profesional; ocupaciones del título y vías de acceso al empleo (por cuenta ajena, por cuenta propia y empleo público). Se presenta la guía de observación que el alumnado usará en la empresa y en el diario de prácticas.
@@ -88,7 +88,7 @@ Los contenidos del RA 1 se desarrollan en la empresa, durante la FFEOE: competen
 ### UD 9. El proyecto profesional (RA 4 · 6 h)
 - El autoconocimiento: intereses, motivaciones, habilidades y destrezas. La autoestima en la búsqueda de empleo.
 - Cualidades y competencias personales y sociales con valor para el empleo en el perfil del título.
-- Hitos de la trayectoria vital con valor profesionalizador (incluida la experiencia en la empresa).
+- Hitos de la trayectoria vital con valor profesionalizador (incluida la experiencia en la empresa, cuando el periodo de formación en empresa del grupo es anterior a la UD 9).
 - Análisis DAFO personal y estrategias CAME.
 - Itinerarios formativos y profesionales relacionados con el perfil del título.
 - Objetivos y metas profesionales; el plan de acción.

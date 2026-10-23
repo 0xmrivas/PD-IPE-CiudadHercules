@@ -36,7 +36,7 @@ La unidad, el peso y los instrumentos de cada criterio se recogen en la tabla de
 | **Procedimiento** | **Instrumentos** |
 |:--:|----|
 | Pruebas escritas | Una prueba objetiva por unidad didáctica: tipo test, preguntas cortas y resolución de casos prácticos. |
-| Producciones del alumnado | Fichas y actividades individuales, en pareja o en grupo; casos prácticos; nóminas; proyecto profesional (portfolio); entorno personal de aprendizaje y plan de desarrollo individual; entregas en Moodle Centros y Google Classroom. |
+| Producciones del alumnado | Fichas y actividades individuales, en pareja o en grupo; casos prácticos; nóminas; proyecto profesional (portfolio); entorno personal de aprendizaje y plan de desarrollo individual; entregas en Moodle Centros. |
 | Observación sistemática | Rúbricas por criterio de evaluación, listas de cotejo (primeros auxilios, exposiciones), diario de clase. |
 | Exposiciones orales | Presentaciones breves individuales o en grupo, valoradas con rúbrica. |
 | FFEOE | Informe/valoración del tutor/a dual de empresa y ficha de seguimiento o diario de prácticas. |

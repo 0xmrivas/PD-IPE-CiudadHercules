@@ -18,7 +18,7 @@ Los criterios son los mismos en los dos ciclos; cambian las actividades formativ
 
 <!-- por-ciclo: actividades-formativas titulo=3 -->
 
-Estos criterios se introducen en el aula en la UD 1, a partir de la evaluación inicial, y la experiencia en la empresa se incorpora después al proyecto profesional de la UD 9. El tutor/a dual valorará cada RA en términos de «superado/no superado» con una valoración cualitativa; la profesora calificará los CE dualizados a partir de dicho informe y del diario o ficha de seguimiento.
+Estos criterios se introducen en el aula en la UD 1, a partir de la evaluación inicial, y, cuando el periodo de empresa del grupo es anterior a la UD 9, la experiencia en la empresa se incorpora al proyecto profesional de esa unidad. El tutor/a dual valorará cada RA en términos de «superado/no superado» con una valoración cualitativa; la profesora calificará los CE dualizados a partir de dicho informe y del diario o ficha de seguimiento.
 
 ## Periodo de la FFEOE
 

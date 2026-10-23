@@ -6,4 +6,4 @@ No hay alumnado con necesidad específica de apoyo educativo. A partir de la eva
 
 - **Incorporaciones tardías:** plan de recuperación de lo ya trabajado con los materiales de Moodle Centros, una ficha de mínimos por unidad y una compañera o compañero de referencia.
 - **Base débil en derecho laboral:** más andamiaje en el bloque laboral (casos resueltos, guiones y glosario) antes de las tareas autónomas.
-- **Estrés ante las pruebas y estudio de última hora:** entregas repartidas a lo largo de cada unidad, pruebas de práctica en Moodle y exposiciones graduadas.
+- **Estudio de última hora:** entregas repartidas a lo largo de cada unidad, pruebas de práctica en Moodle y exposiciones graduadas.

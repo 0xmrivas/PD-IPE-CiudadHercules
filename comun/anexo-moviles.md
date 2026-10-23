@@ -6,5 +6,5 @@ El Proyecto Educativo del centro limita el uso de dispositivos móviles en virtu
 
 Por ello, en el módulo de {{modulo_corto}}:
 
-1. Se permitirá el uso de dispositivos electrónicos con conexión a internet para acceder a las plataformas educativas (Moodle Centros, Google Classroom, Microsoft 365 Education o similares), especialmente en las sesiones que se desarrollan en aulas sin ordenadores.
+1. Se permitirá el uso de dispositivos electrónicos con conexión a internet para acceder a las plataformas educativas (Moodle Centros, Microsoft 365 Education o similares), especialmente en las sesiones que se desarrollan en aulas sin ordenadores.
 2. Se permitirá la consulta puntual de contenidos relacionados con el módulo y la participación en actividades de gamificación, siempre bajo indicación expresa de la profesora.
